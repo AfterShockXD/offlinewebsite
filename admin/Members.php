@@ -62,13 +62,14 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
                       Account
                       <b class="caret"></b>
                     </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu"><br />
                       <div align="center"><img src="../img/Alien%201.bmp" class="img-circle" ></div><br />
-                      <div align="center"><strong><span class="label label-info"><?php  echo $_SESSION['name']; ?></span></strong></div>
-                      <br />
+                      <div align="center"><strong><span class="label label-inverse"><?php  echo $_SESSION['name']; ?></span></strong></div>
                       <li class="divider"></li>
+                      <li><a href="#"><span class="badge badge-important">0</span> Notifications</a> </li>
+                      <li class="divider"></li>
+                      <li><a href="#"><i class="icon-envelope"></i> Messages<span class="badge badge-info pull-right">2</span></a> </li>
                       <li><a href="#"><i class="icon-cog"></i> Settings</a></li>
-                      <li class="divider"></li>
                       <li><a href="logout.php"><i class="icon-lock"></i> logout</a></li>
                     </ul>
                   </li>

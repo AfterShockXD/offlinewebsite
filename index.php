@@ -450,6 +450,7 @@ include("classes/functions.php");
                 </body>
                 <footer>
                     <hr>
-                    <p>Hello</p>
+                    <p align="center">Created by Jp Ellis and Jason Zwanepoel</p>
+                    <p align="center">&COPY; Gamers Connected 2013 <p>
                 </footer>
                 <!-- InstanceEnd --></html>

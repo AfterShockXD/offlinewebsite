@@ -1,12 +1,7 @@
 <?php 
 
-session_start();
 include("../classes/config.php");
-include("../classes/functions.php");
-//var_dump($_SESSION);
-
-//exit(); 
-if (!isset($_SESSION['uid'])) header('location: index.php');
+include("file:///C|/wamp/www/classes/functions.php");
 ?>
 <!DOCTYPE html>
 <html><!-- InstanceBegin template="/Templates/admin.dwt.php" codeOutsideHTMLIsLocked="false" -->
@@ -34,7 +29,6 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
     </style>
   <meta charset="utf-8">
   <!-- InstanceBeginEditable name="head" -->
-  <?php $nav="members"; ?>
   <!-- InstanceEndEditable -->
 </head>
 <body>
@@ -44,17 +38,17 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
             	<a  class="brand" href="../index.php"><strong>Gamers Connected</strong></a>
             	<ul  class="nav">
                     <li class="divider-vertical"></li>
-                    <li <?php if ($nav == "admin") echo "class='active'"; ?>><a href="adminmain.php">Admin</a></li>
+                    <li <?php if ($nav == "admin") echo "class='active'"; ?>><a href="../adminmain.php">Admin</a></li>
                     <li class="divider-vertical"></li>
-                    <li <?php if ($nav == "administrators") echo "class='active'"; ?>><a href="Administrators.php">Administrators</a></li>
+                    <li <?php if ($nav == "administrators") echo "class='active'"; ?>><a href="../Administrators.php">Administrators</a></li>
                     <li class="divider-vertical"></li>
-                    <li <?php if ($nav == "events") echo "class='active'"; ?>><a href="Events.php">Events</a></li>
+                    <li <?php if ($nav == "events") echo "class='active'"; ?>><a href="../Events.php">Events</a></li>
                     <li class="divider-vertical"></li>
-                    <li <?php if ($nav == "members") echo "class='active'"; ?>><a href="Members.php">Members</a></li>
+                    <li <?php if ($nav == "members") echo "class='active'"; ?>><a href="../Members.php">Members</a></li>
                     <li class="divider-vertical"></li>
-                    <li <?php if ($nav == "servers") echo "class='active'"; ?>><a href="Servers.php">Servers</a></li>
+                    <li <?php if ($nav == "servers") echo "class='active'"; ?>><a href="../Servers.php">Servers</a></li>
                     <li class="divider-vertical"></li>
-                    <li><a href="logout.php">logout</a></li>
+                    <li><a href="../logout.php">logout</a></li>
                     <li class="divider-vertical"></li>
                  </ul>
       		</div>

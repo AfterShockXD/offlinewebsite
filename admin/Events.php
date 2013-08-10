@@ -56,7 +56,7 @@ include("../classes/functions.php");
        <div style="padding-top:5px" class="container">
 	   <!-- InstanceBeginEditable name="main" -->
        
-	   
+	   <h1>Hello</h1>
 	   
 	   
 	   <!-- InstanceEndEditable -->

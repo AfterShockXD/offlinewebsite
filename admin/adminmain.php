@@ -65,7 +65,9 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
        <div style="padding-top:2%" class="container">
         <div class="span12 well well-small">
         	<div class="navbar navbar-static-top">
-        		<div class="navbar-inner"><a class="brand" href="#">Registered Members</a>
+        		<div class="navbar-inner">
+               	  <div style="float:left;"><a class="brand" href="#">Registered Members</a></div>
+                  <div class="badge badge-inverse" style="float:right; vertical-align:middle; margin:10px;">10</div>
                 </div>
              <table class="table table-hover table-bordered">
 				<tr class="success">
@@ -106,7 +108,9 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
           <!--Active Active Servers-->
        <div class="span12 well well-small">
         	<div class="navbar navbar-static-top">
-        		<div class="navbar-inner"><a class="brand" href="#">Active Servers</a>
+        		<div class="navbar-inner">
+               	  <div style="float:left;"><a class="brand" href="#">Active Server</a></div>
+                  <div class="badge badge-inverse" style="float:right; vertical-align:middle; margin:10px;">10</div>
                 </div>
  			 <table class="table table-hover table-bordered">
 				<tr class="success">

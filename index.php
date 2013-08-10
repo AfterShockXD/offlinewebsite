@@ -416,7 +416,7 @@ include("classes/functions.php");
 
                 </div>
                 <div>
-                    <div class="well well-large" style="height: 110px; width: 250px">
+                    <div class="well well-large" style="height: 110px; width: 250px;">
                 <!--Start of timer 1-->
                 <h2 align="center" style="padding-left:10px; position: relative; top: -20px; left: -10px;">Time remaining</h2>
                 <div class="pull-right" id="holder">
@@ -445,7 +445,14 @@ include("classes/functions.php");
                     </div>
                 </div>
                 </div>
-        </div>
+               </div>
+                 <div style="float:right">
+		<!--Add your Second Div-->
+                    <strong>iPad/iPhone</strong><span class="pull-right" style="600px">40%</span>
+                    <div class="progress progress-striped active">
+                    <div class="bar" style="width: 40%;"></div>
+                    </div>
+                    </div>
                 <!-- End Of timer -->
                 </body>
                 <footer>

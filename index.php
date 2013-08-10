@@ -7,7 +7,6 @@ include("classes/functions.php");
 <head>
 <!-- InstanceBeginEditable name="doctitle" -->
 <title>Home Page</title>
-<!-- Test -->
 <!-- InstanceEndEditable -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->

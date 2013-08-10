@@ -56,9 +56,29 @@ include("../classes/functions.php");
        <div style="padding-top:5px" class="container">
 	   <!-- InstanceBeginEditable name="main" -->
        
+       <!--Registed Members Div-->
+       <div style="padding-top:2%" class="container">
+        <div class="span4 well well-small">
+        	<div class="navbar navbar-static-top">
+        		<div class="navbar-inner"><a class="brand" href="#">Registerd Members</a>
+                </div>
+               
+       		</div>
+      	 </div>
+       
+	   <!--End Of Reg mem div-->
+       <div class="span4 well well-small">
+        	<div class="navbar navbar-static-top">
+        		<div class="navbar-inner"><a class="brand" href="#">Active Staff</a>
+                </div>
+                  
+    
+  
+        
+       		</div>
+      	 </div>
 	   
-	   
-	   
+	   </div>
 	   <!-- InstanceEndEditable -->
        
 

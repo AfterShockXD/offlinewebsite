@@ -57,8 +57,8 @@ include("../classes/functions.php");
                       <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
-                      <div align="center"><img src="../img/Alien 1.bmp" class="img-circle"></div>
-                      <div align="center"><strong>Name Holder</strong></div>
+                      <div align="center"><img src="../img/Alien 1.bmp" class="img-circle" ></div><br />
+                      <div align="center"><strong><span class="label label-info"><?php  echo $_SESSION['name']; ?></span></strong></div>
                       <br />
                       <li class="divider"></li>
                       <li><a href="#"><i class="icon-cog"></i> Settings</a></li>

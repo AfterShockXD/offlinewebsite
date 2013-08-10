@@ -64,68 +64,7 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
        <div style="padding-top:5px" class="container">
 	   <!-- InstanceBeginEditable name="main" -->
        
-       <!--Registed Members Div-->
-       <div style="padding-top:2%" class="container">
-        <div class="span12 well well-small">
-        	<div class="navbar navbar-static-top">
-        		<div class="navbar-inner"><a class="brand" href="#">Registered Members</a>
-                </div>
-             <table class="table table-hover table-bordered">
-				<tr class="success">
-                 <td width="33%"><strong>Name</strong></td>
-                 <td width="33%"><strong>Surname</strong></td>
-                 <td width="33%"><strong>Status</strong></td>
-              	</tr>
-                <tr class="info">
-                 <td width="33%">Spaceholder</td>
-                 <td width="33%">Spaceholder</td>
-                 <td width="33%">Spaceholder</td>
-              	</tr>
-			 </table>  
-       		</div>
-      	 </div>
-       
-       <!--Active Admin-->
-       <div class="span12 well well-small">
-        	<div class="navbar navbar-static-top">
-        		<div class="navbar-inner">
-               	  <div style="float:left;"><a class="brand" href="#">Active Staff</a></div>
-                  <div class="badge badge-inverse" style="float:right; vertical-align:middle; margin:10px;">10</div>
-                </div>
-              <table class="table table-hover table-bordered">
-				<tr class="success">
-                 <td width="33%"><strong>Name</strong></td>
-                 <td width="33%"><strong>Surname</strong></td>
-                 <td width="33%"><strong>Status</strong></td>
-              	</tr>
-                <tr class="info">
-                 <td width="33%">Spaceholder</td>
-                 <td width="33%">Spaceholder</td>
-                 <td width="33%">Spaceholder</td>
-              	</tr>
-			 </table> 
-       		</div>
-      	 </div>
-          <!--Active Active Servers-->
-       <div class="span12 well well-small">
-        	<div class="navbar navbar-static-top">
-        		<div class="navbar-inner"><a class="brand" href="#">Active Servers</a>
-                </div>
- 			 <table class="table table-hover table-bordered">
-				<tr class="success">
-                 <td width="33%"><strong>Server Name</strong></td>
-                 <td width="33%"><strong>Game</strong></td>
-                 <td width="33%"><strong>Internet Protocol</strong></td>
-              	</tr>
-                <tr class="info">
-                 <td width="33%">Spaceholder</td>
-                 <td width="33%">Spaceholder</td>
-                 <td width="33%">Spaceholder</td>
-              	</tr>
-			 </table>
-       		</div>
-      	 </div>
-	   </div>
+      
 	   <!-- InstanceEndEditable -->
        
 

@@ -57,6 +57,7 @@ include("../classes/functions.php");
 	   <!-- InstanceBeginEditable name="main" -->
        
 	   <h1>Hello</h1>
+       <h2>Not Working 404 Err</h2>
 	   
 	   
 	   <!-- InstanceEndEditable -->

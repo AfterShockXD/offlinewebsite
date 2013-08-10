@@ -3,7 +3,7 @@ include("classes/config.php");
 include("classes/functions.php");
 ?>
 <!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/front.dwt.php" codeOutsideHTMLIsLocked="false" -->
+<html>
     <head>
         <!--Start of Timer 1-->
         <style type="text/css">
@@ -215,10 +215,8 @@ include("classes/functions.php");
         </script>
         <!--End Of timer 1 Head-->
 
-        <!-- InstanceBeginEditable name="doctitle" -->
-        <title>Home Page</title>
-        <!-- InstanceEndEditable -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
         <!--scripts-->
@@ -235,12 +233,9 @@ include("classes/functions.php");
             }
         </style>
         <meta charset="utf-8">
-        <!-- InstanceBeginEditable name="head" -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <meta charset="utf-8">
-        <!-- InstanceEndEditable -->
+    <meta charset="utf-8">
     </head>
     <body onload="countdown(year, month, day, hour, minute)">
 
@@ -285,134 +280,129 @@ include("classes/functions.php");
         </div>
 
         <div style="padding-top:5px" class="container">
-            <!-- InstanceBeginEditable name="main" -->
+<div class="hero-unit">
+      <h1>Welcome</h1>
+      <p>To Gamers Connected, this is an official offline website where you can be up to date on whats happening at the event and where you can get some support if you are stuck. All the Game Servers Ip's Will be on this website under the Servers TAB, This website has an built in Support system where you can chat with admin to help you.</p>
+      <p>
 
-            <div class="hero-unit">
-                <h1>Welcome</h1>
-                <p>To Gamers Connected, this is an official offline website where you can be up to date on whats happening at the event and where you can get some support if you are stuck. All the Game Servers Ip's Will be on this website under the Servers TAB, This website has an built in Support system where you can chat with admin to help you.</p>
-                <p>
-
-                    <!-- LiveZilla Chat Button Link Code (ALWAYS PLACE IN BODY ELEMENT) --><a href="javascript:void(window.open('http://127.0.0.1/offlinewebsite/LiveZilla/chat.php?acid=42e4e','','width=590,height=760,left=0,top=0,resizable=yes,menubar=no,location=no,status=yes,scrollbars=yes'))" class="lz_cbl"><img src="http://127.0.0.1/offlinewebsite/LiveZilla/image.php?acid=4d7eb&amp;id=3&amp;type=inlay" width="200" height="50" style="border:0px;" alt="LiveZilla Live Chat Software"></a><!-- http://www.LiveZilla.net Chat Button Link Code --><!-- LiveZilla Tracking Code (ALWAYS PLACE IN BODY ELEMENT) --><div id="livezilla_tracking" style="display:none"></div><script type="text/javascript">
+          <!-- LiveZilla Chat Button Link Code (ALWAYS PLACE IN BODY ELEMENT) --><a href="javascript:void(window.open('http://127.0.0.1/offlinewebsite/LiveZilla/chat.php?acid=42e4e','','width=590,height=760,left=0,top=0,resizable=yes,menubar=no,location=no,status=yes,scrollbars=yes'))" class="lz_cbl"><img src="http://127.0.0.1/offlinewebsite/LiveZilla/image.php?acid=4d7eb&amp;id=3&amp;type=inlay" width="200" height="50" style="border:0px;" alt="LiveZilla Live Chat Software"></a><!-- http://www.LiveZilla.net Chat Button Link Code --><!-- LiveZilla Tracking Code (ALWAYS PLACE IN BODY ELEMENT) --><div id="livezilla_tracking" style="display:none"></div><script type="text/javascript">
             var script = document.createElement("script");
             script.async = true;
             script.type = "text/javascript";
             var src = "http://127.0.0.1/offlinewebsite/LiveZilla/server.php?acid=294b6&request=track&output=jcrpt&nse=" + Math.random();
             setTimeout("script.src=src;document.getElementById('livezilla_tracking').appendChild(script)", 1);</script><noscript><img src="http://127.0.0.1/offlinewebsite/LiveZilla/server.php?acid=294b6&amp;request=track&amp;output=nojcrpt" width="0" height="0" style="visibility:hidden;" alt=""></noscript><!-- http://www.LiveZilla.net Tracking Code -->
 
-                </p>
-            </div>
+      </p>
+    </div>
 
-            <div class="container">
-                <div class="row-fluid">
-                    <div class="span6">
-                        <h2>Recent Prize Winners:</h2>
-                        <ul class="thumbnails">
-                            <li class="span4">
-                                <div class="thumbnail">
-                                    <img src="img/png.png" alt="">
-                                    <h4 align="center">1st Prize</h4>
-                                    <p>This will be updated as soon as someone wins.</p>
-                                </div>
-                            </li>
-                            <li class="span4">
-                                <div class="thumbnail">
-                                    <img src="img/png.png" alt="">
-                                    <h4 align="center">2nd Prize</h4>
-                                    <p>This will be updated as soon as someone wins.</p>
-                                </div>
-                            </li>
-                            <li class="span4">
-                                <div class="thumbnail">
-                                    <img  src="img/png.png" alt="" width="300px" height="200px">
-                                    <h4 align="center">3rd Prize</h4>
-                                    <p>This will be updated as soon as someone wins.</p>
-                                </div>
-                            </li>
-                        </ul>
-                        <h2></h2>
+          <div class="container">
+              <div class="row-fluid">
+                  <div class="span6">
+                      <h2>Recent Prize Winners:</h2>
+                      <ul class="thumbnails">
+                          <li class="span4">
+                              <div class="thumbnail">
+                                  <img src="img/png.png" alt="">
+                                  <h4 align="center">1st Prize</h4>
+                                  <p>This will be updated as soon as someone wins.</p>
+                              </div>
+                          </li>
+                          <li class="span4">
+                              <div class="thumbnail">
+                                  <img src="img/png.png" alt="">
+                                  <h4 align="center">2nd Prize</h4>
+                                  <p>This will be updated as soon as someone wins.</p>
+                              </div>
+                          </li>
+                          <li class="span4">
+                              <div class="thumbnail">
+                                  <img  src="img/png.png" alt="" width="300px" height="200px">
+                                  <h4 align="center">3rd Prize</h4>
+                                  <p>This will be updated as soon as someone wins.</p>
+                              </div>
+                          </li>
+                      </ul>
+                      <h2></h2>
 
-                    </div>
-                    <div class="span6">
-                        <h2>Upcoming Games:</h2>
-                        <table class="table table-hover" width="103%" border="0">
-                            <tr class="info">
-                                <td width="33%"><strong>Time</strong></td>
-                                <td width="33%"><strong>Game</strong></td>
-                                <td width="33%"><strong>Prizes</strong></td>
-                            </tr>
-                            <tr>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr>
-                        </table>
-                        <p>&nbsp;</p>
-
-
+                  </div>
+                  <div class="span6">
+                      <h2>Upcoming Games:</h2>
+                      <table class="table table-hover" width="103%" border="0">
+                          <tr class="info">
+                              <td width="33%"><strong>Time</strong></td>
+                              <td width="33%"><strong>Game</strong></td>
+                              <td width="33%"><strong>Prizes</strong></td>
+                          </tr>
+                          <tr>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                          </tr>
+                      </table>
+                      <p>&nbsp;</p>
 
 
 
-                    </div>
-                </div>
-                <div>
-                    <div class="well well-large">
-                        <p>Registerd Users: <span style="width:5%; text-align:center" class="label label-info">30</span></p>
-                        <table class="table table-condensed">
-                            <tr class="success">
-                                <td width="33%"><strong>Username</strong></td>
-                                <td width="33%"><strong>First Name</strong></td>
-                                <td width="33%"><strong>Last Name</strong></td>
-                            </tr>
-                            <tr>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr>
-                        </table>
-                    </div>
 
-                    <!-- InstanceEndEditable -->
 
+                  </div>
+              </div>
+              <div>
+                  <div class="well well-large">
+                      <p>Registerd Users: <span style="width:5%; text-align:center" class="label label-info">30</span></p>
+                      <table class="table table-condensed">
+                          <tr class="success">
+                              <td width="33%"><strong>Username</strong></td>
+                              <td width="33%"><strong>First Name</strong></td>
+                              <td width="33%"><strong>Last Name</strong></td>
+                          </tr>
+                          <tr>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                          </tr>
+                      </table>
+                  </div>
 
                 </div>
                 <div>
@@ -444,15 +434,17 @@ include("classes/functions.php");
                         </div>
                     </div>
                 </div>
-                </div>
-               </div>
-                 <div style="float:right">
+                
+               
+                 
 		<!--Add your Second Div-->
-                    <strong>iPad/iPhone</strong><span class="pull-right" style="600px">40%</span>
+                    <div style="width:500px; padding-left:300px" class="container-fluid">
+                    <strong>iPad/iPhone</strong><span class="pull-right">40%</span>
                     <div class="progress progress-striped active">
-                    <div class="bar" style="width: 40%;"></div>
+                    <div class="bar" style="width:40%;"></div>
                     </div>
-                    </div>
+                    
+                    </div></div></div>
                 <!-- End Of timer -->
                 </body>
                 <footer>
@@ -460,4 +452,4 @@ include("classes/functions.php");
                     <p align="center">Created by Jp Ellis and Jason Zwanepoel</p>
                     <p align="center">&COPY; Gamers Connected 2013 <p>
                 </footer>
-                <!-- InstanceEnd --></html>
+                </html>

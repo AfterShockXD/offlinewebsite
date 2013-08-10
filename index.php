@@ -291,34 +291,7 @@ include("classes/functions.php");
                 <h1>Welcome</h1>
                 <p>To Gamers Connected, this is an official offline website where you can be up to date on whats happening at the event and where you can get some support if you are stuck. All the Game Servers Ip's Will be on this website under the Servers TAB, This website has an built in Support system where you can chat with admin to help you.</p>
                 <p>
-                    <!--Start of timer 1-->
-                <h2 align="center" style="padding-left:10px; position: relative; top: 95px;">Time remaining:</h2>
-                <div class="pull-right" id="holder">
-                    <div   id="timer" style="padding-left:10px; position: relative; top: 20px;" >
-                        <div id="note"></div>
-                        <div id="countdown">
-                            <img height=21 src="img/digital-numbers/bkgd.gif" width=16 name="day1">
-                            <img height=21 src="img/digital-numbers/bkgd.gif" width=16 name="day2">
-                            <img height=21 src="img/digital-numbers/bkgd.gif" width=16 name="day3">
-                            <img height=21 id="colon1" src="img/digital-numbers/colon.png" width=9 name="d1">
-                            <img height=21 src="img/digital-numbers/bkgd.gif" width=16 name="h1">
-                            <img height=21 src="img/digital-numbers/bkgd.gif" width=16 name="h2">
-                            <img height=21 id="colon2" src="img/digital-numbers/colon.png" width=9 name="g1">
-                            <img height=21 src="img/digital-numbers/bkgd.gif" width=16 name="m1">
-                            <img height=21 src="img/digital-numbers/bkgd.gif" width=16 name="m2">
-                            <img height=21 id="colon3" src="img/digital-numbers/colon.png" width=9 name="j1">
-                            <img height=21 src="img/digital-numbers/bkgd.gif" width=16 name="s1">
-                            <img height=21 src="img/digital-numbers/bkgd.gif" width=16 name="s2">
-                            <div id="title">
-                                <div class="title" style="position: absolute; top: 36px; left: 42px">DAYS</div>
-                                <div class="title" style="position: absolute; top: 36px; left: 105px">HRS</div>
-                                <div class="title" style="position: absolute; top: 36px; left: 156px">MIN</div>
-                                <div class="title" style="position: absolute; top: 36px; left: 211px">SEC</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Of timer -->
+
                 <!-- LiveZilla Chat Button Link Code (ALWAYS PLACE IN BODY ELEMENT) --><a href="javascript:void(window.open('http://127.0.0.1/offlinewebsite/LiveZilla/chat.php?acid=42e4e','','width=590,height=760,left=0,top=0,resizable=yes,menubar=no,location=no,status=yes,scrollbars=yes'))" class="lz_cbl"><img src="http://127.0.0.1/offlinewebsite/LiveZilla/image.php?acid=4d7eb&amp;id=3&amp;type=inlay" width="200" height="50" style="border:0px;" alt="LiveZilla Live Chat Software"></a><!-- http://www.LiveZilla.net Chat Button Link Code --><!-- LiveZilla Tracking Code (ALWAYS PLACE IN BODY ELEMENT) --><div id="livezilla_tracking" style="display:none"></div><script type="text/javascript">
             var script = document.createElement("script");
             script.async = true;
@@ -442,6 +415,33 @@ include("classes/functions.php");
 
 
                 </div>
-
+<!--Start of timer 1-->
+                <h2 align="center" style="padding-left:10px; position: relative; top: 95px;">Time remaining:</h2>
+                <div class="pull-right" id="holder">
+                    <div   id="timer" style="padding-left:10px; position: relative; top: 20px;" >
+                        <div id="note"></div>
+                        <div id="countdown">
+                            <img height=21 src="img/digital-numbers/bkgd.gif" width=16 name="day1">
+                            <img height=21 src="img/digital-numbers/bkgd.gif" width=16 name="day2">
+                            <img height=21 src="img/digital-numbers/bkgd.gif" width=16 name="day3">
+                            <img height=21 id="colon1" src="img/digital-numbers/colon.png" width=9 name="d1">
+                            <img height=21 src="img/digital-numbers/bkgd.gif" width=16 name="h1">
+                            <img height=21 src="img/digital-numbers/bkgd.gif" width=16 name="h2">
+                            <img height=21 id="colon2" src="img/digital-numbers/colon.png" width=9 name="g1">
+                            <img height=21 src="img/digital-numbers/bkgd.gif" width=16 name="m1">
+                            <img height=21 src="img/digital-numbers/bkgd.gif" width=16 name="m2">
+                            <img height=21 id="colon3" src="img/digital-numbers/colon.png" width=9 name="j1">
+                            <img height=21 src="img/digital-numbers/bkgd.gif" width=16 name="s1">
+                            <img height=21 src="img/digital-numbers/bkgd.gif" width=16 name="s2">
+                            <div id="title">
+                                <div class="title" style="position: absolute; top: 36px; left: 42px">DAYS</div>
+                                <div class="title" style="position: absolute; top: 36px; left: 105px">HRS</div>
+                                <div class="title" style="position: absolute; top: 36px; left: 156px">MIN</div>
+                                <div class="title" style="position: absolute; top: 36px; left: 211px">SEC</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Of timer -->
                 </body>
                 <!-- InstanceEnd --></html>

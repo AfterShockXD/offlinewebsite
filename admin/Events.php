@@ -45,17 +45,29 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
                     <li class="divider-vertical"></li>
                     <li <?php if ($nav == "admin") echo "class='active'"; ?>><a href="adminmain.php">Admin</a></li>
                     <li class="divider-vertical"></li>
-                    <li <?php if ($nav == "administrators") echo "class='active'"; ?>><a href="Administrators.php">Administrators</a></li>
+                    <li <?php if ($nav == "administrators") echo "class='active'"; ?>><a href="administrators.php">Administrators</a></li>
                     <li class="divider-vertical"></li>
-                    <li <?php if ($nav == "events") echo "class='active'"; ?>><a href="Events.php">Events</a></li>
+                    <li <?php if ($nav == "events") echo "class='active'"; ?>><a href="events.php">Events</a></li>
                     <li class="divider-vertical"></li>
-                    <li <?php if ($nav == "members") echo "class='active'"; ?>><a href="Members.php">Members</a></li>
+                    <li <?php if ($nav == "members") echo "class='active'"; ?>><a href="members.php">Members</a></li>
                     <li class="divider-vertical"></li>
-                    <li <?php if ($nav == "servers") echo "class='active'"; ?>><a href="Servers.php">Servers</a></li>
-                    <li class="divider-vertical"></li>
-                    <li><a href="logout.php">logout</a></li>
+                    <li <?php if ($nav == "servers") echo "class='active'"; ?>><a href="servers.php">Servers</a></li>
                     <li class="divider-vertical"></li>
                  </ul>
+                 
+                 <ul class="nav pull-right">
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      Account
+                      <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="logout.php">logout</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                 
+                 
       		</div>
      </div>
        

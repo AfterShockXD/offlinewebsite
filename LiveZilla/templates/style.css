@@ -1,0 +1,9 @@
+#lz_chat_alert_box_text{font-size:12px;font-family:verdana,arial;padding:5px;padding-right:15px;padding-left:18px;color:#000000;}
+#lz_chat_alert_box{position:absolute;z-index:99999;background:#f0f0f0;border:1px solid #808080;border-top:0px solid #808080;width:350px;background-repeat:repeat-x;display:none;-moz-box-shadow: 5px 5px 5px #8d8d8d;-webkit-box-shadow: 5px 5px 5px #8d8d8d;box-shadow: 5px 5px 5px #8d8d8d;}
+
+.lz_form_button{cursor:pointer;width:120px;font-size:12px;}
+.lz_chat_clickable_image{cursor:pointer;}
+
+.unmovable{cursor:default;padding:0px;}
+#csschktr{display:none;}
+

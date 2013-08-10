@@ -1,0 +1,6 @@
+FTP host:eternalender.bugs3.com
+FTP IP:185.28.21.12
+FTP Port:21
+FTP username:u948334724
+FTP password:156856@j
+http://cpanel.serversfree.com/

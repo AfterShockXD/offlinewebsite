@@ -1,0 +1,8 @@
+<div style="margin:0px;padding:0px;border:0px;background:#EEEEEE;background-repeat:no-repeat;background-position:center left;width:302px;height:220px;"></div>
+<div style="width:25px;position:absolute;left:272px;top:5px;cursor:pointer;background:red;" onclick="top.lz_tracking_close_request();top.lz_tracking_action_result('chat_request',false,true);return false;">&nbsp;</div>
+<div style="position:absolute;left:15px;top:9px;font-family:verdana,arial;font-size:10px;font-weight:bold;color:#797979;"><!--lang_client_chat_invitation--></div>
+<img style="position:absolute;left:10px;top:38px;" src="<!--server--><!--intern_image-->" border="0">
+<div style="width:183px;height:87px;position:absolute;left:106px;top:41px;font-family:verdana,arial;font-size:10px;color:black;line-height:12px;text-align:left;"><B><!--intern_name--></B>:<br><!--invitation_text--></div>
+<div onclick="lz_request_window.lz_livebox_chat('<!--user_id-->','<!--group_id-->');top.lz_tracking_action_result('chat_request',true,<!--close_on_click-->);" style="text-align:center;width:105px;height:15px;border:1px;padding:3px;position:absolute;left:185px;top:181px;cursor:pointer;font-family:verdana,arial;font-size:10px;color:#585858;line-height:12px;"><!--lang_client_start_chat--></div>
+<div style="position:absolute;left:12px;top:165px;font-family:verdana,arial;font-size:10px;color:#9f9f9f;"><!--lang_client_your_name-->:</div>
+<input type="text" value="<!--username-->" id="lz_invitation_name" maxlength="32" style="position:absolute;left:11px;top:180px;background-repeat:no-repeat;border:0px;height:20px;width:164px;font-size:11px;color:#707070;padding-left:3px;line-height:18px;outline:none;">

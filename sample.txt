@@ -1,0 +1,15 @@
+load_database();
+
+$did =(int)$_REQUEST['did'];
+
+$query = "SELECT expires FROM dbjump.subscriptions where did = {$did}";
+
+$rs = $db->query($query);
+
+echo $row->email;
+
+while ($row = $db->fetchObject($rs)) {
+
+	echo $row->email;
+
+}

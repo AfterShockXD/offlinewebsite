@@ -1,0 +1,141 @@
+<!--
+ /****************************************************************************************
+ * LiveZilla configure.html
+ *
+ * Copyright 2013 LiveZilla GmbH
+ * All rights reserved.
+ * LiveZilla is a registered trademark.
+ *
+ ***************************************************************************************/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>
+        Livezilla Mobile
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="./js/jquery_mobile/jquery.mobile-1.3.0.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/livezilla.css"/>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+
+    <script type="text/javascript" src="./js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="./js/jquery_mobile/jquery.mobile-1.3.0.min.js"></script>
+
+    <script type="text/javascript" src="./js/md5.js"></script>
+
+    <script type="text/javascript" src="./js/lzm/classes/CommonConfigClass.js"></script>
+    <script type="text/javascript" src="./js/lzm/classes/CommonToolsClass.js"></script>
+    <script type="text/javascript" src="./js/lzm/classes/CommonDisplayClass.js"></script>
+    <script type="text/javascript" src="./js/lzm/classes/CommonStorageClass.js"></script>
+    <script type="text/javascript" src="./js/lzm/classes/CommonTranslationClass.js"></script>
+    <script type="text/javascript" src="./js/lzm/configure.js"></script>
+</head>
+<body>
+
+<div id="configure_page" data-role="page">
+    <header id="header_configure" data-role="header" data-position="fixed">
+        <h1 id="headline1">&nbsp;</h1>
+        <!--<a href="#" data-icon="back" data-iconpos="right" id="back_btn" data-mini="true" data-inline="true"
+            class="ui-btn-right">&nbsp;</a>-->
+    </header>
+    <article id="content_configure" data-role="content">
+        <div id="configure_form">
+            <select name="server_profile_selection" id="server_profile_selection">
+            </select>
+            <a href="#" data-role="button" data-inline="true" data-mini="true" id="new_profile_btn">&nbsp;</a>
+            <a href="#" data-role="button" data-inline="true" data-mini="true" id="edit_profile_btn" class="change-config ui-disabled">&nbsp;</a>
+            <a href="#" data-role="button" data-inline="true" data-mini="true" id="del_profile_btn" class="change-config ui-disabled">&nbsp;</a>
+            <a href="#" data-role="button" data-inline="true" data-mini="true" id="back_btn">&nbsp;</a>
+
+            <div id="new_profile_form" style="display:none;">
+                <div data-role="fieldcontain">
+                    <label id="server_profile-text" for="server_profile"></label>
+                    <input type="text" name="server_profile" class="data-input" id="server_profile"
+                           data-clear-btn="true" autocapitalize="off" autocorrect="off" />
+                </div>
+                <div class="server-data">
+                    <div data-role="fieldcontain">
+                        <label id="server_protocol-text" for="server_protocol"></label>
+                        <select id="server_protocol" class="data-input">
+                        </select>
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label id="server_url-text" for="server_url"></label>
+                        <input type="text" name="server_url" class="data-input" id="server_url" autocapitalize="off" autocorrect="off" />
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label id="server_port-text" for="server_port"></label>
+                        <input type="text" name="server_port" class="data-input" id="server_port" data-inline="true" />
+                    </div>
+                    <div data-role="fieldcontain">
+                        <fieldset data-role="controlgroup">
+                            <input type="checkbox" name="save_login" id="save_login" class="save_login" />
+                            <label id="save_login-text" for="save_login">&nbsp;</label>
+                        </fieldset>
+                    </div>
+                </div>
+                <div data-role="fieldcontain">
+                    <label id="login_name-text" for="login_name"></label>
+                    <input type="text" name="login_name" class="data-input login_data" id="login_name" disabled="true" autocapitalize="off" autocorrect="off" />
+                </div>
+                <div data-role="fieldcontain">
+                    <label id="login_passwd-text" for="login_passwd"></label>
+                    <input type="password" name="login_passwd" class="data-input login_data" id="login_passwd"
+                           disabled="true" />
+                </div>
+                <a href="#" data-role="button" data-icon="check" id="save_new_profile">&nbsp;</a>
+            </div>
+
+            <div id="edit_profile_form" style="display:none;">
+                <div data-role="fieldcontain">
+                    <label id="edit_server_profile-text" for="edit_server_profile"></label>
+                    <input type="text" name="server_profile" class="data-input" id="edit_server_profile"
+                           data-clear-btn="true" autocapitalize="off" autocorrect="off" />
+                </div>
+                <div class="server-data">
+                    <div data-role="fieldcontain">
+                        <label id="edit_server_protocol-text" for="edit_server_protocol"></label>
+                        <select id="edit_server_protocol" class="data-input">
+                        </select>
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label id="edit_server_url-text" for="edit_server_url"></label>
+                        <input type="text" name="server_url" class="data-input" id="edit_server_url" autocapitalize="off" autocorrect="off" />
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label id="edit_server_port-text" for="edit_server_port"></label>
+                        <input type="text" name="server_port" class="data-input" id="edit_server_port" value="80"
+                               data-inline="true" />
+                    </div>
+                    <div data-role="fieldcontain">
+                        <fieldset data-role="controlgroup">
+                            <input type="checkbox" name="save_login" id="edit_save_login" class="save_login" />
+                            <label id="edit_save_login-text" for="edit_save_login">&nbsp;</label>
+                        </fieldset>
+                    </div>
+                </div>
+                <div data-role="fieldcontain">
+                    <label id="edit_login_name-text" for="edit_login_name"></label>
+                    <input type="text" name="login_name" class="data-input login_data" id="edit_login_name"
+                           disabled="true" autocapitalize="off" autocorrect="off" />
+                </div>
+                <div data-role="fieldcontain">
+                    <label id="edit_login_passwd-text" for="edit_login_passwd"></label>
+                    <input type="password" name="login_passwd" class="data-input login_data" id="edit_login_passwd"
+                           disabled="true" />
+                </div>
+                <input type="hidden" id="profile_index" value="-1" />
+                <a href="#" data-role="button" data-icon="check" id="save_edit_profile">&nbsp;</a>
+            </div>
+
+        </div>
+    </article>
+    <footer id="footer_configure" data-role="footer" data-position="fixed" data-id=footer>
+    </footer>
+</div>
+
+</body>
+</html>

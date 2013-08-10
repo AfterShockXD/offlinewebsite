@@ -1,0 +1,186 @@
+/****************************************************************************************
+* LiveZilla livezilla.css
+*
+* Copyright 2013 LiveZilla GmbH
+* All rights reserved.
+* LiveZilla is a registered trademark.
+*
+***************************************************************************************/
+html {
+    overflow: hidden;
+}
+
+body {
+    overflow: hidden;
+}
+
+html,body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: Verdana, Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.incoming-chat {
+    background-color: #fb0;
+}
+
+.lz-menu-buttons li {
+    display: inline;
+    width: 50%;
+}
+
+.my-breakpoint .ui-block-a {
+    width:  19.925%;
+
+}
+.my-breakpoint .ui-block-b {
+    width:  79.925%;
+}
+
+@media all and (max-width: 30em) {
+    .my-breakpoint .ui-block-a,
+    .my-breakpoint .ui-block-b,
+    .my-breakpoint .ui-block-c,
+    .my-breakpoint .ui-block-d,
+    .my-breakpoint .ui-block-e {
+        width: 100%;
+        float:none;
+    }
+}
+
+.mouse-menu {
+    cursor: pointer;
+}
+
+.mouse-menu td:hover{
+    background: #EBF7FF;
+}
+
+.mouse-menu td {
+    padding: 6px 12px;
+}
+
+.mouse-menu {
+    font-size: 14px;
+    border: 1px outset #ccc;
+    box-shadow: 4px 4px 2px #ddd;
+    -moz-box-shadow: 4px 4px 2px #ddd;
+    -webkit-box-shadow: 4px 4px 2px #ddd;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+.visitor-list-table td, .visitor-list-table th {
+    text-align: left;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.visitor-list-table th {
+    background-color: #e9e9e9;
+}
+
+#visitor-info td, #visitor-info th {
+    padding: 6px;
+}
+
+.block-ui-button {
+    padding: 7px 12px;
+    border-radius: 0.4em;
+    box-shadow: 2px 2px 4px #DDD;
+    margin: 15px 30px;
+    border: 1px outset #BBB;
+    font-size: 18px;
+    background: #EEE;
+    font-weight: bold;
+}
+
+.chat-button-line {
+    height: 14px;
+    border: 1px solid #ccc;
+    padding: 3px;
+    text-shadow: none;
+    font-size: 11px;
+}
+
+.chat-button-left {
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    -moz-border-bottom-left-radius: 4px;
+    -moz-border-top-left-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-top-left-radius: 4px;
+    -ms-border-bottom-left-radius: 4px;
+    -ms-border-top-left-radius: 4px;
+    -o-border-bottom-left-radius: 4px;
+    -o-border-top-left-radius: 4px;
+    margin-left: 2px;
+}
+
+.chat-button-right {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    -moz-border-top-right-radius: 4px;
+    -moz-border-bottom-right-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    -ms-border-top-right-radius: 4px;
+    -ms-border-bottom-right-radius: 4px;
+    -o-border-top-right-radius: 4px;
+    -o-border-bottom-right-radius: 4px;
+    margin-right: 2px;
+}
+
+.lz_message_a_title{color:#ffffff;font-weight:bold;font-size:11px;text-shadow:0 0px 0 #fff;font-family: Verdana, Arial, sans-serif;}
+.lz_message_a_time{color:#ffffff;font-weight:bold;font-size:11px;text-shadow:0 0px 0 #fff;font-family: Verdana, Arial, sans-serif;}
+.lz_message_b_title{color:#7a7a7a;font-weight:bold;font-size:11px;text-shadow:0 0px 0 #fff;font-family: Verdana, Arial, sans-serif;}
+.lz_message_b_time{color:#8d8d8d;font-weight:bold;font-size:11px;text-shadow:0 0px 0 #fff;font-family: Verdana, Arial, sans-serif;}
+.lz_message_text{color:#333333;font-weight:normal;font-size:12px;text-shadow:0 0px 0 #fff;font-family: Verdana, Arial, sans-serif;}
+.lz_message_translation{border-left:0px solid #99ccff;margin-top:4px;padding-left:5px;color:#808080;font-style:italic;text-shadow:0 0px 0 #fff;}
+
+.TCB{margin:0px;width:auto;margin-top:2px;}
+.TCB TD{font-size:11px; line-height: 12px;}
+.TCB A{font-size:11px;}
+.TCB A:ACTIVE{font-size:11px;}
+.TCB A:VISITED{font-size:11px;}
+.TCBB{margin:0px;width:97%;padding:4px;padding-left:0px;}
+.TCCL{width:25px;border-top: 2px solid white;background-image: url('../img/chat_chat.gif');background-repeat: no-repeat;	background-position: bottom;}
+.TCBB{margin:5px;}
+
+.lz_chat_link{color:#787878;text-decoration:underline; display:inline-block;white-space: nowrap;padding-left:20px;background-image:url('../img/054-doc_web16c.png');background-repeat:no-repeat;background-position:left;}
+.lz_chat_file{color:#787878;text-decoration:underline; display:inline-block;white-space: nowrap;padding-left:20px;background-image:url('../img/622-paper_clip.png');background-repeat:no-repeat;background-position:left;}
+.lz_chat_mail{color:#787878;text-decoration:underline; display:inline-block;white-space: nowrap;padding-left:20px;background-image:url('../img/023-email2.png');background-repeat:no-repeat;background-position:left;}
+.lz_chat_human{color:#787878;text-decoration:underline; display:inline-block;white-space: nowrap;padding-left:20px;background-image:url('../img/052-doc_user.png');background-repeat:no-repeat;background-position:left;}
+.lz_chat_accept{color:#787878;text-decoration:underline; display:inline-block;white-space: nowrap;padding-left:20px;background-image:url('../img/200-ok2.png');background-repeat:no-repeat;background-position:left;}
+.lz_chat_decline{color:#787878;text-decoration:underline; display:inline-block;white-space: nowrap;padding-left:20px;background-image:url('../img/205-close16c.png');background-repeat:no-repeat;background-position:left;}
+
+
+
+/* Styles for new templates */
+.TCM{height:20px;width:100%;margin:0px;margin-top:6px; text-shadow: none;}
+.TCF{width:100%;margin:0px;margin-bottom:2px;}
+
+.ECM0{margin:0px;padding:0px;height:20px;width:6px;background-image:url('../img/chat_bg_gray_left.gif');}
+.ECM1{margin:0px;padding:0px;background-image:url('../img/chat_bg_gray_center.gif');}
+.ECM2{margin:0px;padding:1px 0px 1px 4px;text-align:left;vertical-align:middle;background-image: url('../img/chat_bg_gray_center.gif');font-size:10px;font-weight:bold;font-family:verdana,arial;color:#696969;}
+.ECM3{margin:0px;padding:0px 4px 0px 0px;text-align:right;vertical-align:middle;background-image:url('../img/chat_bg_gray_center.gif');font-size:10px;font-weight:bold;font-family:verdana,arial;color:#707070;width:5em;}
+.ECM3t{margin:0px;padding:1px 0px 1px 4px;text-align:right;vertical-align:middle;font-size:10px;font-weight:bold;font-family:verdana,arial;color:#707070;}
+.ECM4{margin:0px;padding:0px;width:6px;background-image:url('../img/chat_bg_gray_right.gif');}
+
+.ICM0{margin:0px;padding:0px;height:20px;width:6px;background-image:url('../img/chat_bg_green_left.gif');}
+.ICM1{margin:0px;padding:0px;background-image:url('../img/chat_bg_green_center.gif');}
+.ICM2{margin:0px;padding:1px 0px 1px 4px;text-align:left;vertical-align:middle;background-image: url('../img/chat_bg_green_center.gif');font-size:10px;font-weight:bold;font-family:verdana,arial;color:#FFF;}
+.ICM3{margin:0px;padding:0px 4px 0px 0px;text-align:right;vertical-align:middle;background-image:url('../img/chat_bg_green_center.gif');font-size:10px;font-weight:bold;font-family:verdana,arial;color:#FFF;width:5em;}
+.ICM3t{margin:0px;padding:1px 0px 1px 4px;text-align:right;vertical-align:middle;font-size:10px;font-weight:bold;font-family:verdana,arial;color:#FFF;}
+.ICM4{margin:0px;padding:0px;width:6px;background-image:url('../img/chat_bg_green_right.gif');}
+
+.RCM0{margin:0px;padding:0px;height:20px;width:6px;background-image:url('../img/chat_bg_blue_left.gif');}
+.RCM1{margin:0px;padding:0px;background-image:url('../img/chat_bg_blue_center.gif');}
+.RCM2{margin:0px;padding:1px 0px 1px 4px;text-align:left;vertical-align:middle;background-image: url('../img/chat_bg_blue_center.gif');font-size:10px;font-weight:bold;font-family:verdana,arial;color:#FFF;}
+.RCM3{margin:0px;padding:0px 4px 0px 0px;text-align:right;vertical-align:middle;background-image:url('../img/chat_bg_blue_center.gif');font-size:10px;font-weight:bold;font-family:verdana,arial;color:#FFF;width:5em;}
+.RCM3t{margin:0px;padding:1px 0px 1px 4px;text-align:right;vertical-align:middle;font-size:10px;font-weight:bold;font-family:verdana,arial;color:#FFF;}
+.RCM4{margin:0px;padding:0px;width:6px;background-image:url('../img/chat_bg_blue_right.gif');}

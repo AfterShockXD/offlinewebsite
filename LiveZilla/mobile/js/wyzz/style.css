@@ -1,0 +1,25 @@
+body {
+    font-size:12px;
+    font-family:verdana;
+}
+
+.lz_chat_link {color:#787878;
+    text-decoration:underline;
+    display:inline-block;
+    white-space: nowrap;
+    padding-left:20px;
+    background-image:url('../../img/054-doc_web16c.png');
+    background-repeat:no-repeat;
+    background-position:left;
+}
+
+.lz_chat_file {
+    color:#787878;
+    text-decoration:underline;
+    display:inline-block;
+    white-space: nowrap;
+    padding-left:20px;
+    background-image:url('../../img/622-paper_clip.png');
+    background-repeat:no-repeat;
+    background-position:left;
+}

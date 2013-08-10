@@ -289,7 +289,7 @@ include("classes/functions.php");
 
             <div class="hero-unit">
                 <h1>Welcome</h1>
-                <p>To Gamers Connected, this is an official offline website where you can be up to date on whats happening at the event and where you can get some support if you are stuck.All the Game Servers Ip's Will be on this website under the Servers TAB, This website has an built in Support system where you can chat with admin to help you.</p>
+                <p>To Gamers Connected, this is an official offline website where you can be up to date on whats happening at the event and where you can get some support if you are stuck. All the Game Servers Ip's Will be on this website under the Servers TAB, This website has an built in Support system where you can chat with admin to help you.</p>
                 <p>
                     <!--Start of timer 1-->
                 <h2 align="center" style="padding-left:10px">Time remaining:</h2>

@@ -57,7 +57,13 @@ include("../classes/functions.php");
                       <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a href="logout.php">logout</a></li>
+                      <div align="center"><img src="../img/Alien%201.bmp" class="img-circle"></div>
+                      <div align="center"><strong>Name Holder</strong></div>
+                      <br />
+                      <li class="divider"></li>
+                      <li><a href="#"><i class="icon-cog"></i> Settings</a></li>
+                      <li class="divider"></li>
+                      <li><a href="logout.php"><i class="icon-lock"></i> logout</a></li>
                     </ul>
                   </li>
                 </ul>

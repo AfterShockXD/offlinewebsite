@@ -292,7 +292,7 @@ include("classes/functions.php");
                 <p>To Gamers Connected, this is an official offline website where you can be up to date on whats happening at the event and where you can get some support if you are stuck. All the Game Servers Ip's Will be on this website under the Servers TAB, This website has an built in Support system where you can chat with admin to help you.</p>
                 <p>
 
-                <!-- LiveZilla Chat Button Link Code (ALWAYS PLACE IN BODY ELEMENT) --><a href="javascript:void(window.open('http://127.0.0.1/offlinewebsite/LiveZilla/chat.php?acid=42e4e','','width=590,height=760,left=0,top=0,resizable=yes,menubar=no,location=no,status=yes,scrollbars=yes'))" class="lz_cbl"><img src="http://127.0.0.1/offlinewebsite/LiveZilla/image.php?acid=4d7eb&amp;id=3&amp;type=inlay" width="200" height="50" style="border:0px;" alt="LiveZilla Live Chat Software"></a><!-- http://www.LiveZilla.net Chat Button Link Code --><!-- LiveZilla Tracking Code (ALWAYS PLACE IN BODY ELEMENT) --><div id="livezilla_tracking" style="display:none"></div><script type="text/javascript">
+                    <!-- LiveZilla Chat Button Link Code (ALWAYS PLACE IN BODY ELEMENT) --><a href="javascript:void(window.open('http://127.0.0.1/offlinewebsite/LiveZilla/chat.php?acid=42e4e','','width=590,height=760,left=0,top=0,resizable=yes,menubar=no,location=no,status=yes,scrollbars=yes'))" class="lz_cbl"><img src="http://127.0.0.1/offlinewebsite/LiveZilla/image.php?acid=4d7eb&amp;id=3&amp;type=inlay" width="200" height="50" style="border:0px;" alt="LiveZilla Live Chat Software"></a><!-- http://www.LiveZilla.net Chat Button Link Code --><!-- LiveZilla Tracking Code (ALWAYS PLACE IN BODY ELEMENT) --><div id="livezilla_tracking" style="display:none"></div><script type="text/javascript">
             var script = document.createElement("script");
             script.async = true;
             script.type = "text/javascript";
@@ -310,7 +310,7 @@ include("classes/functions.php");
                             <li class="span4">
                                 <div class="thumbnail">
                                     <img src="img/png.png" alt="">
-                                    <h4 align="center">1St Prize</h4>
+                                    <h4 align="center">1st Prize</h4>
                                     <p>This will be updated as soon as someone wins.</p>
                                 </div>
                             </li>
@@ -415,10 +415,12 @@ include("classes/functions.php");
 
 
                 </div>
-<!--Start of timer 1-->
-                <h2 align="center" style="padding-left:10px; position: relative; top: 95px;">Time remaining:</h2>
+                <div>
+                    <div class="well well-large">
+                <!--Start of timer 1-->
+                <h2 align="center" style="padding-left:10px; position: relative; left: -325px; top: 95px;">Time remaining</h2>
                 <div class="pull-right" id="holder">
-                    <div   id="timer" style="padding-left:10px; position: relative; top: 20px;" >
+                    <div   id="timer" style="padding-left:10px; position: relative; left: -805px; top: 80px;" >
                         <div id="note"></div>
                         <div id="countdown">
                             <img height=21 src="img/digital-numbers/bkgd.gif" width=16 name="day1">
@@ -441,6 +443,8 @@ include("classes/functions.php");
                             </div>
                         </div>
                     </div>
+                </div>
+                </div>
                 </div>
                 <!-- End Of timer -->
                 </body>

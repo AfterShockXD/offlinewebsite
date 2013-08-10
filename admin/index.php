@@ -12,7 +12,7 @@ include("../classes/functions.php");
     <!-- Bootstrap -->
     <link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
     <!--scripts-->
-    
+    <?php $nav=""; ?>
     <script src="../js/jquery-1.9.1.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/validate.js"></script>
@@ -38,15 +38,15 @@ include("../classes/functions.php");
             	<a  class="brand" href="../index.php"><strong>Gamers Connected</strong></a>
             	<ul  class="nav">
                     <li class="divider-vertical"></li>
-                    <li class="active"><a href="adminmain.php">Admin</a></li>
+                    <li <?php if ($nav == "admin") echo "class='active'"; ?>><a href="adminmain.php">Admin</a></li>
                     <li class="divider-vertical"></li>
-                    <li><a href="Administrators.php">Administrators</a></li>
+                    <li <?php if ($nav == "administrators") echo "class='active'"; ?>><a href="Administrators.php">Administrators</a></li>
                     <li class="divider-vertical"></li>
-                    <li><a href="Events.php">Events</a></li>
+                    <li <?php if ($nav == "events") echo "class='active'"; ?>><a href="Events.php">Events</a></li>
                     <li class="divider-vertical"></li>
-                    <li><a href="Members.php">Members</a></li>
+                    <li <?php if ($nav == "members") echo "class='active'"; ?>><a href="Members.php">Members</a></li>
                     <li class="divider-vertical"></li>
-                    <li><a href="Servers.php">Servers</a></li>
+                    <li <?php if ($nav == "servers") echo "class='active'"; ?>><a href="Servers.php">Servers</a></li>
                     <li class="divider-vertical"></li>
                     <li><a href="logout.php">logout</a></li>
                     <li class="divider-vertical"></li>

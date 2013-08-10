@@ -1,6 +1,13 @@
 <?php 
+session_start();
 include("../classes/config.php");
 include("../classes/functions.php");
+//var_dump($_SESSION);
+
+//exit(); 
+if (!isset($_SESSION['uid'])) header('location: index.php');
+
+	
 ?>
 <!DOCTYPE html>
 <html><!-- InstanceBegin template="/Templates/admin.dwt.php" codeOutsideHTMLIsLocked="false" -->
@@ -12,7 +19,7 @@ include("../classes/functions.php");
     <!-- Bootstrap -->
     <link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
     <!--scripts-->
-    
+    <?php $nav=""; ?>
     <script src="../js/jquery-1.9.1.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/validate.js"></script>
@@ -28,6 +35,7 @@ include("../classes/functions.php");
     </style>
   <meta charset="utf-8">
   <!-- InstanceBeginEditable name="head" -->
+  <?php $nav="administrators"; ?>
   <!-- InstanceEndEditable -->
 </head>
 <body>
@@ -37,15 +45,15 @@ include("../classes/functions.php");
             	<a  class="brand" href="../index.php"><strong>Gamers Connected</strong></a>
             	<ul  class="nav">
                     <li class="divider-vertical"></li>
-                    <li class="active"><a href="adminmain.php">Admin</a></li>
+                    <li <?php if ($nav == "admin") echo "class='active'"; ?>><a href="adminmain.php">Admin</a></li>
                     <li class="divider-vertical"></li>
-                    <li><a href="Administrators.php">Administrators</a></li>
+                    <li <?php if ($nav == "administrators") echo "class='active'"; ?>><a href="Administrators.php">Administrators</a></li>
                     <li class="divider-vertical"></li>
-                    <li><a href="Events.php">Events</a></li>
+                    <li <?php if ($nav == "events") echo "class='active'"; ?>><a href="Events.php">Events</a></li>
                     <li class="divider-vertical"></li>
-                    <li><a href="Members.php">Members</a></li>
+                    <li <?php if ($nav == "members") echo "class='active'"; ?>><a href="Members.php">Members</a></li>
                     <li class="divider-vertical"></li>
-                    <li><a href="Servers.php">Servers</a></li>
+                    <li <?php if ($nav == "servers") echo "class='active'"; ?>><a href="Servers.php">Servers</a></li>
                     <li class="divider-vertical"></li>
                     <li><a href="logout.php">logout</a></li>
                     <li class="divider-vertical"></li>
@@ -60,7 +68,7 @@ include("../classes/functions.php");
        <div style="padding-top:2%" class="container">
         <div class="span12 well well-small">
         	<div class="navbar navbar-static-top">
-        		<div class="navbar-inner"><a class="brand" href="#">Registerd Members</a>
+        		<div class="navbar-inner"><a class="brand" href="#">Registered Members</a>
                 </div>
              <table class="table table-hover table-bordered">
 				<tr class="success">

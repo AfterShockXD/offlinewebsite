@@ -416,11 +416,11 @@ include("classes/functions.php");
 
                 </div>
                 <div>
-                    <div class="well well-large">
+                    <div class="well well-large" style="height: 150px; width: fit-content">
                 <!--Start of timer 1-->
-                <h2 align="center" style="padding-left:10px; position: relative; left: -325px; top: 95px;">Time remaining</h2>
+                <h2 align="center" style="padding-left:10px; position: relative; top: 0px; left: -320px;">Time remaining</h2>
                 <div class="pull-right" id="holder">
-                    <div   id="timer" style="padding-left:10px; position: relative; left: -805px; top: 80px;" >
+                    <div   id="timer" style="padding-left:10px; position: relative; top: -20px; left: -770px;">
                         <div id="note"></div>
                         <div id="countdown">
                             <img height=21 src="img/digital-numbers/bkgd.gif" width=16 name="day1">
@@ -445,7 +445,11 @@ include("classes/functions.php");
                     </div>
                 </div>
                 </div>
-                </div>
+        </div>
                 <!-- End Of timer -->
                 </body>
+                <footer>
+                    <hr>
+                    <p>Hello</p>
+                </footer>
                 <!-- InstanceEnd --></html>

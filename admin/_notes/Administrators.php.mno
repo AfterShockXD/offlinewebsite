@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_updateAd" value="name:fname;datatype:string,name:lname;datatype:string,name:email;datatype:string,name:password;datatype:string,name:status;datatype:int" />
+</info>

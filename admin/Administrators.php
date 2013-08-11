@@ -162,7 +162,7 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
     </div>
     <div id="collapseThree" class="accordion-body collapse">
       <div class="accordion-inner">
-        Anim pariatur cliche...
+        
       </div>
     </div>
   </div>  

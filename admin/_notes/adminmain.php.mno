@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_activeservers" value="name:id;datatype:int,name:SName;datatype:string,name:Game;datatype:string,name:IP;datatype:string,name:Active;datatype:int" />
+	<infoitem key="UD_ActiveEvent" value="name:id;datatype:int,name:SName;datatype:string,name:Game;datatype:string,name:IP;datatype:string,name:Active;datatype:int" />
+</info>

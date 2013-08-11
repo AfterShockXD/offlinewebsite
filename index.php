@@ -372,9 +372,8 @@ include("classes/functions.php");
 
                   </div>
               </div>
-              <div>
-    <div class="well well-large">
-      <p>Registerd Users: <span style="width:5%; text-align:center" class="label label-info">30</span></p>
+    <div class="well well-large container">
+      <p>Registerd Users: <span style="width:5%;" class="label label-info">30</span></p>
                   <table class="table table-condensed">
                     <tr class="success">
                       <td width="33%"><strong>Username</strong></td>
@@ -402,11 +401,28 @@ include("classes/functions.php");
                       <td>&nbsp;</td>
                     </tr>
                   </table>
-    </div>
-	<div class="container">
+    </div> 
+	<div class="container well well-large">
       <!-- Table And Content goes here-->
-    
-    
+ <table width="100%" border="1">
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
     
     
     

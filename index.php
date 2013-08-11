@@ -401,16 +401,43 @@ include("classes/functions.php");
                       <td>&nbsp;</td>
                     </tr>
                   </table>
-    </div> 
+    </div>
 	<div class="container well well-large">
       <!-- Table And Content goes here-->
  <table width="100%" border="1">
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+  <tr style="width: 60px; height: 120px">
+    <td width="200px"><h2 align="center" style="padding-left:10px; position: relative; top: 10px; left: 0px;">Time remaining:</h2></td>
+    <td width="150px">
+        <!--Start of timer 1-->
+                <div class="pull-right" id="holder">
+                    <div   id="timer" style="padding-left:10px; position: relative; top: -40px; left: -300px;">
+                        <div id="note"></div>
+                        <div id="countdown">
+                            <img height=21 src="img/digital-numbers/bkgd.gif" width=16 name="day1">
+                            <img height=21 src="img/digital-numbers/bkgd.gif" width=16 name="day2">
+                            <img height=21 src="img/digital-numbers/bkgd.gif" width=16 name="day3">
+                            <img height=21 id="colon1" src="img/digital-numbers/colon.png" width=9 name="d1">
+                            <img height=21 src="img/digital-numbers/bkgd.gif" width=16 name="h1">
+                            <img height=21 src="img/digital-numbers/bkgd.gif" width=16 name="h2">
+                            <img height=21 id="colon2" src="img/digital-numbers/colon.png" width=9 name="g1">
+                            <img height=21 src="img/digital-numbers/bkgd.gif" width=16 name="m1">
+                            <img height=21 src="img/digital-numbers/bkgd.gif" width=16 name="m2">
+                            <img height=21 id="colon3" src="img/digital-numbers/colon.png" width=9 name="j1">
+                            <img height=21 src="img/digital-numbers/bkgd.gif" width=16 name="s1">
+                            <img height=21 src="img/digital-numbers/bkgd.gif" width=16 name="s2">
+                            <div id="title">
+                                <div class="title" style="position: absolute; top: 36px; left: 42px">DAYS</div>
+                                <div class="title" style="position: absolute; top: 36px; left: 105px">HRS</div>
+                                <div class="title" style="position: absolute; top: 36px; left: 156px">MIN</div>
+                                <div class="title" style="position: absolute; top: 36px; left: 211px">SEC</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- End Of timer --></td>
   </tr>
   <tr>
-    <td>&nbsp;</td>
+    <td></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
@@ -423,18 +450,18 @@ include("classes/functions.php");
   </tr>
 </table>
 
-    
-    
-    
-    
+
+
+
+
     </div>
 
-   
-               
-                 
+
+
+
 		<!--Add your Second Div-->
-                   
-                   
+
+
                 <!-- End Of timer -->
                 </body>
                 <footer>

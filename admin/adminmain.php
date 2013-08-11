@@ -1,5 +1,6 @@
 <?php require_once('../Connections/loclahost.php'); ?>
 <?php require_once('Recordsets/ActiveServers.php');
+ 	  require_once('Recordsets/ActiveStaff.php');
 session_start();
 include("../classes/config.php");
 include("../classes/functions.php");
@@ -9,6 +10,9 @@ include("../classes/functions.php");
 if (!isset($_SESSION['uid'])) header('location: index.php');
 
  ?>
+ 
+ 
+ 
 <!DOCTYPE html>
 <html><!-- InstanceBegin template="/Templates/admin.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
@@ -118,11 +122,13 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
                  <td width="33%"><strong>Surname</strong></td>
                  <td width="33%"><strong>Status</strong></td>
               	</tr>
+                <?php do { ?>
                 <tr class="info">
-                 <td width="33%">Spaceholder</td>
-                 <td width="33%">Spaceholder</td>
-                 <td width="33%">Spaceholder</td>
+                 <td width="33%"><?php echo $row_activestaff['fname']; ?></td>
+                 <td width="33%"><?php echo $row_activestaff['lname']; ?></td>
+                 <td width="33%"><?php echo $row_activestaff['status']; ?></td>
               	</tr>
+                 <?php } while ($row_activestaff = mysql_fetch_assoc($activestaff)); ?>
 			 </table> 
        		</div>
       	 </div>
@@ -163,5 +169,7 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
 
 </html>
 <?php
+mysql_free_result($activestaff);
+
 mysql_free_result($ActiveEvent);
 ?>

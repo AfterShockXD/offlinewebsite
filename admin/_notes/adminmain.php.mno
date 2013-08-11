@@ -2,4 +2,6 @@
 <info>
 	<infoitem key="UD_activeservers" value="name:id;datatype:int,name:SName;datatype:string,name:Game;datatype:string,name:IP;datatype:string,name:Active;datatype:int" />
 	<infoitem key="UD_ActiveEvent" value="name:id;datatype:int,name:SName;datatype:string,name:Game;datatype:string,name:IP;datatype:string,name:Active;datatype:int" />
+	<infoitem key="UD_mrc" value="name:id;datatype:int,name:fname;datatype:string,name:lname;datatype:string,name:status;datatype:int" />
+	<infoitem key="UD_activestaff" value="name:id;datatype:int,name:fname;datatype:string,name:lname;datatype:string,name:status;datatype:int" />
 </info>

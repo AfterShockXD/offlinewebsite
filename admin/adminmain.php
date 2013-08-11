@@ -114,7 +114,7 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
         	<div class="navbar navbar-static-top">
         		<div class="navbar-inner">
                	  <div style="float:left;"><a class="brand" href="#">Active Staff</a></div>
-                  <div class="badge badge-inverse" style="float:right; vertical-align:middle; margin:10px;"></div>
+                  <div class="badge badge-inverse" style="float:right; vertical-align:middle; margin:10px;">2</div>
                 </div>
               <table class="table table-hover table-bordered">
 				<tr class="success">

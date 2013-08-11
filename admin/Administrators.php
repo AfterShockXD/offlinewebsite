@@ -1,7 +1,11 @@
-<?php 
+<?php require_once('../Connections/loclahost.php'); ?>
+<?php
+ 
 session_start();
 include("../classes/config.php");
 include("../classes/functions.php");
+require_once('Recordsets/ActiveStaff.php');
+require_once('Recordsets/aadnewadmin.php');
 //var_dump($_SESSION);
 
 //6exit(); 
@@ -82,8 +86,89 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
        
        <div style="padding-top:5px" class="container">
 	   <!-- InstanceBeginEditable name="main" -->
-       
-      
+                
+<div class="accordion well well-large" id="accordion2">
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+        View Active staff <i class="icon-th-list pull-right"></i>
+      </a>
+    </div>
+    <div id="collapseOne" class="accordion-body collapse in">
+      <div class="accordion-inner">
+        <table class="table table-hover table-bordered">
+				<tr class="success">
+                 <td width="33%"><strong>Name</strong></td>
+                 <td width="33%"><strong>Surname</strong></td>
+                 <td width="33%"><strong>Status</strong></td>
+              	</tr>
+                <?php do { ?>
+                <tr class="info">
+                 <td width="33%"><?php echo $row_activestaff['fname']; ?></td>
+                 <td width="33%"><?php echo $row_activestaff['lname']; ?></td>
+                 <td width="33%"><?php echo $row_activestaff['status']; ?></td>
+              	</tr>
+                 <?php } while ($row_activestaff = mysql_fetch_assoc($activestaff)); ?>
+		  </table>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+        Add Staff <i class=" icon-user pull-right"></i>
+      </a>
+    </div>
+    <div id="collapseTwo" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <form method="post" name="form1" action="<?php echo $editFormAction; ?>">
+          <table align="center">
+            <tr valign="baseline">
+              <td nowrap align="right">First Name:</td>
+              <td><input type="text" name="fname" value="" size="32"></td>
+            </tr>
+            <tr valign="baseline">
+              <td nowrap align="right">Last Name:</td>
+              <td><input type="text" name="lname" value="" size="32"></td>
+            </tr>
+            <tr valign="baseline">
+              <td nowrap align="right">Email:</td>
+              <td><input type="text" name="email" value="" size="32"></td>
+            </tr>
+            <tr valign="baseline">
+              <td nowrap align="right">Password:</td>
+              <td><input type="text" name="password" value="" size="32"></td>
+            </tr>
+            <tr valign="baseline">
+              <td nowrap align="right">Status:</td>
+              <td><input type="checkbox" name="status" value="" ></td>
+            </tr>
+            <tr valign="baseline">
+              <td nowrap align="right">&nbsp;</td>
+              <td><input class="btn" type="submit" value="Add Admin"></td>
+            </tr>
+          </table>
+          <input type="hidden" name="MM_insert" value="form1">
+        </form>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+  </div>
+<div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+        Edit/Remove Staff <i class="icon-edit pull-right"></i>
+      </a>
+    </div>
+    <div id="collapseThree" class="accordion-body collapse">
+      <div class="accordion-inner">
+        Anim pariatur cliche...
+      </div>
+    </div>
+  </div>  
+</div>
+
+
 	   <!-- InstanceEndEditable -->
        
 

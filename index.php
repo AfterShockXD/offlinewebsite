@@ -455,7 +455,7 @@ include("classes/functions.php");
                     <div class="bar" style="width:40%;"></div>
                     </div></div></div></div>
                 <!-- End Of Poll --></td>
-        <td align="center"><button type="submit" class="btn">Sign in &raquo;</button></td>
+        <td align="center"><button type="submit" class="btn">Submit &raquo;</button></td>
   </tr>
 </table>
 

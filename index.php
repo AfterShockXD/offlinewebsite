@@ -13,9 +13,9 @@ include("classes/functions.php");
                                          your page, or change to "absolute" then change
                                          the values of the "top" and "left" properties to
                                          position the timer */
-                top: 2px;            /* change to position the timer; must also change
+                top: 0px;            /* change to position the timer; must also change
                                          position to "absolute" above */
-                left: 150px;  	      /* change to position the timer; must also change
+                left: 0px;  	      /* change to position the timer; must also change
                                          position to "absolute" above */
                 width: 270px;
                 height: 5px;
@@ -36,7 +36,7 @@ include("classes/functions.php");
 
             #note {
                 position: absolute;
-                top: -70px;
+                top: 0px;
                 height: 0px;
                 width: 0px;
                 margin: 0 auto;
@@ -63,9 +63,9 @@ include("classes/functions.php");
 
             #timer {
                 position: absolute;
-                top: -70px;
-                left: -120px;
-                margin: 10px auto;
+                top: 0px;
+                left: 0px;
+                margin: 0px auto;
                 text-align: center;
                 width: 260px;
                 height: 40px;
@@ -282,7 +282,7 @@ include("classes/functions.php");
         <div style="padding-top:5px" class="container">
 <div class="hero-unit">
       <h1>Welcome</h1>
-      <p>To Gamers Connected, this is an official offline website where you can be up to date on whats happening at the event and where you can get some support if you are stuck. All the Game Servers Ip's Will be on this website under the Servers TAB, This website has an built in Support system where you can chat with admin to help you.</p>
+      <p>To Gamers Connected, this is the official offline website where you can be up to date on whats happening at the event and where you can get some support if you are stuck. All the Game Servers Ip's Will be on this website under the Servers TAB, This website has an built in Support system where you can chat with admin to help you.</p>
       <p>
 
           <!-- LiveZilla Chat Button Link Code (ALWAYS PLACE IN BODY ELEMENT) --><a href="javascript:void(window.open('http://127.0.0.1/offlinewebsite/LiveZilla/chat.php?acid=42e4e','','width=590,height=760,left=0,top=0,resizable=yes,menubar=no,location=no,status=yes,scrollbars=yes'))" class="lz_cbl"><img src="http://127.0.0.1/offlinewebsite/LiveZilla/image.php?acid=4d7eb&amp;id=3&amp;type=inlay" width="200" height="50" style="border:0px;" alt="LiveZilla Live Chat Software"></a><!-- http://www.LiveZilla.net Chat Button Link Code --><!-- LiveZilla Tracking Code (ALWAYS PLACE IN BODY ELEMENT) --><div id="livezilla_tracking" style="display:none"></div><script type="text/javascript">
@@ -404,13 +404,13 @@ include("classes/functions.php");
     </div>
 	<div class="container well well-large">
       <!-- Table And Content goes here-->
- <table width="100%" border="1">
-  <tr style="width: 60px; height: 120px">
-    <td width="200px"><h2 align="center" style="padding-left:10px; position: relative; top: 10px; left: 0px;">Time remaining:</h2></td>
-    <td width="150px">
+ <table width="100%" border="0">
+  <tr>
+    <td width="200px"><h2 align="center" style="height: 70px;">Time remaining:</h2></td>
+    <td>
         <!--Start of timer 1-->
                 <div class="pull-right" id="holder">
-                    <div   id="timer" style="padding-left:10px; position: relative; top: -40px; left: -300px;">
+                    <div   id="timer" style="left: -60px; top:-30px;">
                         <div id="note"></div>
                         <div id="countdown">
                             <img height=21 src="img/digital-numbers/bkgd.gif" width=16 name="day1">
@@ -437,16 +437,25 @@ include("classes/functions.php");
 <!-- End Of timer --></td>
   </tr>
   <tr>
-    <td></td>
-    <td>&nbsp;</td>
+    <td align="center"><input class="span2 container-fluid" type="text" placeholder="Name"></td>
+    <td align="center"><input class="span2 container-fluid" type="text" placeholder="Email"></td>
   </tr>
   <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td align="center"><input class="span2 container-fluid" type="text" placeholder="Username"></td>
+    <td align="center"><input class="span2 container-fluid" type="password" placeholder="Password"></td>
   </tr>
   <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td align="center">
+
+        <!--Start of poll-->
+
+                    <div style="width:500px" class="container-fluid">
+                    <strong>Sign up progression:</strong><span class="pull-right">40%</span>
+                    <div class="progress progress-striped active">
+                    <div class="bar" style="width:40%;"></div>
+                    </div></div></div></div>
+                <!-- End Of Poll --></td>
+        <td align="center"><button type="submit" class="btn">Sign in &raquo;</button></td>
   </tr>
 </table>
 

@@ -410,7 +410,7 @@ include("classes/functions.php");
     <td>
         <!--Start of timer 1-->
                 <div class="pull-right" id="holder">
-                    <div   id="timer" style="left: -60px; top:-30px;">
+                    <div   id="timer" style="left: -70px; top:-30px;">
                         <div id="note"></div>
                         <div id="countdown">
                             <img height=21 src="img/digital-numbers/bkgd.gif" width=16 name="day1">
@@ -442,7 +442,7 @@ include("classes/functions.php");
   </tr>
   <tr>
     <td align="center"><input class="span2 container-fluid" type="text" placeholder="Username"></td>
-    <td align="center"><input class="span2 container-fluid" type="password" placeholder="Password"></td>
+    <td <form> <input type="checkbox" name="Subscription" value="True" align="center">  Would you like to recieve an Email newsletter about this event?</form></td>
   </tr>
   <tr>
     <td align="center">

@@ -495,7 +495,7 @@ include("classes/functions.php");
 
                     <div style="width:500px" class="container-fluid">
                     
-        <strong>Sign up progression:</strong><span class="pull-right">40%</span></div><div class="progress progress-striped active">
+        <strong>Sign up progression:</strong><span class="pull-right">40%</span><br /></div><div class="progress progress-striped active">
         <div class="bar" style="width:40%;"></div>
       </div>
                 <!-- End Of Poll --></td>

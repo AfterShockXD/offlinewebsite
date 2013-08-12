@@ -32,7 +32,7 @@ if ($db->numRows($rs) > 0) {
 		'msg'  => 'Logged in'
 	);	
 	$_SESSION['uid'] = $row->id;
-	$_SESSION['name'] = $row->fname;
+	$_SESSION['name'] = $row->fname . " " . $row->lname;
 } 
 		
 echo json_encode($response);

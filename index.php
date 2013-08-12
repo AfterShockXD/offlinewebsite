@@ -515,22 +515,7 @@ include("classes/functions.php");
 
 
                 <!-- End Of timer -->
-                <table border="0">
-                  <tr>
-                    <td>Game</td>
-                    <td>Prizes</td>
-                    <td>Start time</td>
-                    <td>End time</td>
-                  </tr>
-                  
-                    <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                   
-                </table>
+             
     </body>
                 <footer>
                     <hr>

@@ -1,3 +1,48 @@
+<?php require_once('Connections/loclahost.php'); ?>
+<?php
+if (!function_exists("GetSQLValueString")) {
+function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
+{
+  if (PHP_VERSION < 6) {
+    $theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
+  }
+
+  $theValue = function_exists("mysql_real_escape_string") ? mysql_real_escape_string($theValue) : mysql_escape_string($theValue);
+
+  switch ($theType) {
+    case "text":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;    
+    case "long":
+    case "int":
+      $theValue = ($theValue != "") ? intval($theValue) : "NULL";
+      break;
+    case "double":
+      $theValue = ($theValue != "") ? doubleval($theValue) : "NULL";
+      break;
+    case "date":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;
+    case "defined":
+      $theValue = ($theValue != "") ? $theDefinedValue : $theNotDefinedValue;
+      break;
+  }
+  return $theValue;
+}
+}
+
+$colname_ActvServers = "1";
+if (isset($_GET['Active'])) {
+  $colname_ActvServers = $_GET['Active'];
+}
+mysql_select_db($database_loclahost, $loclahost);
+$query_ActvServers = sprintf("SELECT SName, Game, IP, Active FROM tblservers WHERE Active = %s ORDER BY id ASC", GetSQLValueString($colname_ActvServers, "int"));
+$ActvServers = mysql_query($query_ActvServers, $loclahost) or die(mysql_error());
+$row_ActvServers = mysql_fetch_assoc($ActvServers);
+$totalRows_ActvServers = mysql_num_rows($ActvServers);
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,7 +60,8 @@
   <body>
    <div class="navbar navbar-static-top">
     		<div  class="navbar-inner ">
-            	<a  class="brand" href="#"><strong>Gamers Connected</strong></a>
+            
+<a  class="brand" href="#"><strong>Gamers Connected</strong></a>
             	<ul class="nav">
                 <li class="divider-vertical"></li>
              	<li ><a href="index.php">Home</a></li>
@@ -56,18 +102,22 @@
  <div style="padding-top:2%" class="container">
   <table class="table table-hover table-bordered">
   <tr class="success">
-    <td width="35%"><strong>Server</strong></td>
-    <td width="35%"><strong>Server Name</strong></td>
+    <td width="25%"><strong>Server Name</strong></td>
+    <td width="25%"><strong>Game </strong></td>
+    <td width="15%"><strong>IP</strong></td>
     <td width="15%"><strong>Active / Inactive</strong></td>
+    
     <td width="15%"><strong>Request to Acive</strong></td>
   </tr> 
+  <?php do { ?>
   <tr class="info">
-  <td></td>
-  <td></td>
-  <td></td>
+  <td><?php echo $row_ActvServers['SName']; ?></td>
+  <td><?php echo $row_ActvServers['Game']; ?></td>
+  <td><?php echo $row_ActvServers['IP']; ?></td>
+  <td><?php echo $row_ActvServers['Active']; ?></td>
   <td><a href="#"><i class="icon-upload"></i> Request</a></td>
   </tr>
-  
+   <?php } while ($row_ActvServers = mysql_fetch_assoc($ActvServers)); ?>
  </table>
  </div>  
    
@@ -76,3 +126,6 @@
   <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
+<?php
+mysql_free_result($ActvServers);
+?>

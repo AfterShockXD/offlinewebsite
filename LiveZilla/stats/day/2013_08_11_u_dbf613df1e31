@@ -1,0 +1,231 @@
+<table cellpadding="0" cellspacing="0" align="center" width="900">
+	<tr>
+		<td>
+			<table cellspacing="0" cellpadding="0" width="100%">
+				<tr>
+					<td class="header_line"><!--lang_stats_visitors--></td>
+					<td class="header_line" align="right">11.08.2013</td>
+				</tr>
+				<tr>
+					<td class="header_nav_line">&nbsp;&nbsp;7 <!--lang_stats_visitors--></td>
+					<td class="header_nav_line" align="right">Status:&nbsp;&nbsp;<!--lang_stats_status_closed-->&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<table class="bt_values" cellspacing="0" cellpadding="2" width="100%">
+				<tr>
+					<td class="bt_column_header" width="15">#</td>
+					<td class="bt_column_header" width="40" align="center"><!--lang_stats_pages--></td>
+					<td class="bt_column_header" width="60" align="center"><!--lang_stats_entrance--></td>
+					<td class="bt_column_header" width="60" align="center"><!--lang_stats_exit--></td>
+					<td class="bt_column_header" width="*"><!--lang_stats_country--></td>
+					<td class="bt_column_header" width="*"><!--lang_stats_city--></td>
+					<td class="bt_column_header" width="*"><!--lang_stats_browser--></td>
+					<td class="bt_column_header" width="*"><!--lang_stats_system--></td>
+					<td class="bt_column_header" width="25">&nbsp;</td>
+				</tr>
+				
+	<tr>
+		<td>1</td>
+		<td align="center"><a href="javascript:switchRowVisibility('pl_1');"><strong>0?</strong></a></td>
+		<td align="center">10:16:51</td>
+		<td align="center">10:17:25</td>
+		<td NOWRAP>South Africa</td>
+		<td NOWRAP>Pretoria</td>
+		<td NOWRAP>Chrome 28</td>
+		<td NOWRAP>Windows 8</td>
+		<td class="vs" align="right"></td>
+	</tr>
+
+	<tr>
+		<td>2</td>
+		<td align="center"><a href="javascript:switchRowVisibility('pl_2');"><strong>3</strong></a></td>
+		<td align="center">10:39:59</td>
+		<td align="center">11:18:13</td>
+		<td NOWRAP>South Africa</td>
+		<td NOWRAP>Pretoria</td>
+		<td NOWRAP>Chrome 28</td>
+		<td NOWRAP>Windows 8</td>
+		<td class="vm" align="right"></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_21">
+		<td>&nbsp;</td>
+		<td align="center">1</td>
+		<td align="center">10:16:51</td>
+		<td align="center">10:17:25</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/" target="_blank">http://127.0.0.1/offlinewebsite/</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_22">
+		<td>&nbsp;</td>
+		<td align="center">2</td>
+		<td align="center">10:17:25</td>
+		<td align="center">11:18:13</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/index.php" target="_blank">http://127.0.0.1/offlinewebsite/index.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_23">
+		<td>&nbsp;</td>
+		<td align="center">3</td>
+		<td align="center">10:39:59</td>
+		<td align="center">10:39:59</td>
+		<td colspan="5"><!--lang_stats_browser--> 2: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/" target="_blank">http://127.0.0.1/offlinewebsite/</a></td>
+	</tr>
+
+	<tr>
+		<td>3</td>
+		<td align="center"><a href="javascript:switchRowVisibility('pl_3');"><strong>2</strong></a></td>
+		<td align="center">12:54:59</td>
+		<td align="center">12:57:30</td>
+		<td NOWRAP>South Africa</td>
+		<td NOWRAP>Pretoria</td>
+		<td NOWRAP>Chrome 28</td>
+		<td NOWRAP>Windows 8</td>
+		<td class="vm" align="right"></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_31">
+		<td>&nbsp;</td>
+		<td align="center">1</td>
+		<td align="center">12:54:59</td>
+		<td align="center">12:57:25</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/" target="_blank">http://127.0.0.1/offlinewebsite/</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_32">
+		<td>&nbsp;</td>
+		<td align="center">2</td>
+		<td align="center">12:57:25</td>
+		<td align="center">12:57:30</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/index.php" target="_blank">http://127.0.0.1/offlinewebsite/index.php</a></td>
+	</tr>
+
+	<tr>
+		<td>4</td>
+		<td align="center"><a href="javascript:switchRowVisibility('pl_4');"><strong>1</strong></a></td>
+		<td align="center">14:17:38</td>
+		<td align="center">14:23:20</td>
+		<td NOWRAP>South Africa</td>
+		<td NOWRAP>Pretoria</td>
+		<td NOWRAP>Chrome 28</td>
+		<td NOWRAP>Windows 8</td>
+		<td class="vm" align="right"></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_41">
+		<td>&nbsp;</td>
+		<td align="center">1</td>
+		<td align="center">14:18:15</td>
+		<td align="center">14:18:15</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/" target="_blank">http://127.0.0.1/offlinewebsite/</a></td>
+	</tr>
+
+	<tr>
+		<td>5</td>
+		<td align="center"><a href="javascript:switchRowVisibility('pl_5');"><strong>5</strong></a></td>
+		<td align="center">14:38:53</td>
+		<td align="center">15:41:57</td>
+		<td NOWRAP>South Africa</td>
+		<td NOWRAP>Pretoria</td>
+		<td NOWRAP>Chrome 28</td>
+		<td NOWRAP>Windows 8</td>
+		<td class="vm" align="right"></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_51">
+		<td>&nbsp;</td>
+		<td align="center">1</td>
+		<td align="center">14:17:38</td>
+		<td align="center">14:19:46</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/" target="_blank">http://127.0.0.1/offlinewebsite/</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_52">
+		<td>&nbsp;</td>
+		<td align="center">2</td>
+		<td align="center">14:19:46</td>
+		<td align="center">14:54:55</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/index.php" target="_blank">http://127.0.0.1/offlinewebsite/index.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_53">
+		<td>&nbsp;</td>
+		<td align="center">3</td>
+		<td align="center">14:54:55</td>
+		<td align="center">15:22:58</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/index.php#" target="_blank">http://127.0.0.1/offlinewebsite/index.php#</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_54">
+		<td>&nbsp;</td>
+		<td align="center">4</td>
+		<td align="center">15:22:58</td>
+		<td align="center">15:41:57</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/index.php" target="_blank">http://127.0.0.1/offlinewebsite/index.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_55">
+		<td>&nbsp;</td>
+		<td align="center">5</td>
+		<td align="center">14:38:53</td>
+		<td align="center">14:38:53</td>
+		<td colspan="5"><!--lang_stats_browser--> 2: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/" target="_blank">http://127.0.0.1/offlinewebsite/</a></td>
+	</tr>
+
+	<tr>
+		<td>6</td>
+		<td align="center"><a href="javascript:switchRowVisibility('pl_6');"><strong>1</strong></a></td>
+		<td align="center">17:42:25</td>
+		<td align="center">17:44:25</td>
+		<td NOWRAP>South Africa</td>
+		<td NOWRAP>Pretoria</td>
+		<td NOWRAP>Chrome 28</td>
+		<td NOWRAP>Windows 8</td>
+		<td class="vm" align="right"></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_61">
+		<td>&nbsp;</td>
+		<td align="center">1</td>
+		<td align="center">17:42:25</td>
+		<td align="center">17:44:25</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://eternalender.bugs3.com/" target="_blank">http://eternalender.bugs3.com/</a></td>
+	</tr>
+
+	<tr>
+		<td>7</td>
+		<td align="center"><a href="javascript:switchRowVisibility('pl_7');"><strong>2</strong></a></td>
+		<td align="center">20:05:00</td>
+		<td align="center">20:07:52</td>
+		<td NOWRAP>South Africa</td>
+		<td NOWRAP>Pretoria</td>
+		<td NOWRAP>Chrome 28</td>
+		<td NOWRAP>Windows 8</td>
+		<td class="vm" align="right"></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_71">
+		<td>&nbsp;</td>
+		<td align="center">1</td>
+		<td align="center">20:05:00</td>
+		<td align="center">20:06:19</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/" target="_blank">http://127.0.0.1/offlinewebsite/</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_72">
+		<td>&nbsp;</td>
+		<td align="center">2</td>
+		<td align="center">20:06:19</td>
+		<td align="center">20:07:52</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/index.php" target="_blank">http://127.0.0.1/offlinewebsite/index.php</a></td>
+	</tr>
+
+			</table>
+			<br>
+		</td>
+	</tr>
+</table>

@@ -11,6 +11,8 @@ require_once('Recordsets/aadnewadmin.php');
 //6exit(); 
 if (!isset($_SESSION['uid'])) header('location: index.php');
 
+
+
 	
 ?>
 <!DOCTYPE html>
@@ -104,11 +106,14 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
               	</tr>
                 <?php do { ?>
                 <tr class="info">
-                 <td width="33%"><?php echo $row_activestaff['fname']; ?></td>
-                 <td width="33%"><?php echo $row_activestaff['lname']; ?></td>
-                 <td width="33%"><?php echo $row_activestaff['status']; ?></td>
+                 <td width="33%"><?php echo $row_admin['fname']; ?></td>
+                 <td width="33%"><?php echo $row_admin['lname']; ?></td>
+                 <td width="33%"><?php if ($row_admin ['status'] == 1)
+echo '<span class="label label-success">Active</span>';
+else
+echo '<span class="label label-important">inactive</span>'; ?></td>
               	</tr>
-                 <?php } while ($row_activestaff = mysql_fetch_assoc($activestaff)); ?>
+                <?php } while ($row_admin = mysql_fetch_assoc($admin)); ?> 
 		  </table>
       </div>
     </div>
@@ -175,4 +180,9 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
 		</div>
     
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+
+</html>
+<?php
+mysql_free_result($admin);
+?>

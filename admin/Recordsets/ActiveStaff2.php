@@ -30,9 +30,13 @@ function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDe
 }
 }
 
+$colname_activestaff = "1";
+if (isset($_GET['status'])) {
+  $colname_activestaff = $_GET['status'];
+}
 mysql_select_db($database_loclahost, $loclahost);
-$query_admin = "SELECT fname, lname, status FROM tbladmin ORDER BY id ASC";
-$admin = mysql_query($query_admin, $loclahost) or die(mysql_error());
-$row_admin = mysql_fetch_assoc($admin);
-$totalRows_admin = mysql_num_rows($admin);
+$query_activestaff = sprintf("SELECT fname, lname, status FROM tbladmin WHERE status = %s ORDER BY id ASC", GetSQLValueString($colname_activestaff, "text"));
+$activestaff = mysql_query($query_activestaff, $loclahost) or die(mysql_error());
+$row_activestaff = mysql_fetch_assoc($activestaff);
+$totalRows_activestaff = mysql_num_rows($activestaff);
 ?>

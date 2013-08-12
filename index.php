@@ -1,7 +1,73 @@
+<?php require_once('Connections/loclahost.php'); ?>
+<?php
+if (!function_exists("GetSQLValueString")) {
+function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
+{
+  if (PHP_VERSION < 6) {
+    $theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
+  }
+
+  $theValue = function_exists("mysql_real_escape_string") ? mysql_real_escape_string($theValue) : mysql_escape_string($theValue);
+
+  switch ($theType) {
+    case "text":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;    
+    case "long":
+    case "int":
+      $theValue = ($theValue != "") ? intval($theValue) : "NULL";
+      break;
+    case "double":
+      $theValue = ($theValue != "") ? doubleval($theValue) : "NULL";
+      break;
+    case "date":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;
+    case "defined":
+      $theValue = ($theValue != "") ? $theDefinedValue : $theNotDefinedValue;
+      break;
+  }
+  return $theValue;
+}
+}
+
+$maxRows_UGames = 5;
+$pageNum_UGames = 0;
+if (isset($_GET['pageNum_UGames'])) {
+  $pageNum_UGames = $_GET['pageNum_UGames'];
+}
+$startRow_UGames = $pageNum_UGames * $maxRows_UGames;
+
+$colname_UGames = "1";
+if (isset($_GET['Active'])) {
+  $colname_UGames = $_GET['Active'];
+}
+mysql_select_db($database_loclahost, $loclahost);
+$query_UGames = sprintf("SELECT Game, Prizes, `Start time`, `End time` FROM tblservers WHERE Active = %s ORDER BY `Start time` DESC", GetSQLValueString($colname_UGames, "int"));
+$query_limit_UGames = sprintf("%s LIMIT %d, %d", $query_UGames, $startRow_UGames, $maxRows_UGames);
+$UGames = mysql_query($query_limit_UGames, $loclahost) or die(mysql_error());
+$row_UGames = mysql_fetch_assoc($UGames);
+
+if (isset($_GET['totalRows_UGames'])) {
+  $totalRows_UGames = $_GET['totalRows_UGames'];
+} else {
+  $all_UGames = mysql_query($query_UGames);
+  $totalRows_UGames = mysql_num_rows($all_UGames);
+}
+$totalPages_UGames = ceil($totalRows_UGames/$maxRows_UGames)-1;
+?>
 <?php
 include("classes/config.php");
 include("classes/functions.php");
 ?>
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -333,36 +399,13 @@ include("classes/functions.php");
                               <td width="33%"><strong>Game</strong></td>
                               <td width="33%"><strong>Prizes</strong></td>
                           </tr>
+                          <?php do { ?>
                           <tr>
-                              <td>&nbsp;</td>
-                              <td>&nbsp;</td>
-                              <td>&nbsp;</td>
+                              <td><?php echo $row_UGames['Start time']; ?> - <?php echo $row_UGames['End time']; ?></td>
+                              <td><?php echo $row_UGames['Game']; ?></td>
+                              <td><?php echo $row_UGames['Prizes']; ?></td>
                           </tr>
-                          <tr>
-                              <td>&nbsp;</td>
-                              <td>&nbsp;</td>
-                              <td>&nbsp;</td>
-                          </tr>
-                          <tr>
-                              <td>&nbsp;</td>
-                              <td>&nbsp;</td>
-                              <td>&nbsp;</td>
-                          </tr>
-                          <tr>
-                              <td>&nbsp;</td>
-                              <td>&nbsp;</td>
-                              <td>&nbsp;</td>
-                          </tr>
-                          <tr>
-                              <td>&nbsp;</td>
-                              <td>&nbsp;</td>
-                              <td>&nbsp;</td>
-                          </tr>
-                          <tr>
-                              <td>&nbsp;</td>
-                              <td>&nbsp;</td>
-                              <td>&nbsp;</td>
-                          </tr>
+                           <?php } while ($row_UGames = mysql_fetch_assoc($UGames)); ?>
                       </table>
                       <p>&nbsp;</p>
 
@@ -404,7 +447,10 @@ include("classes/functions.php");
     </div>
 	<div class="container well well-large">
       <!-- Table And Content goes here-->
- <table width="100%" border="0">
+      <div class="progress progress-striped active">
+        <div class="bar" style="width:40%;"></div>
+      </div>
+      <table width="100%" border="0">
   <tr>
     <td width="200px"><h2 align="center" style="height: 70px;">Time remaining:</h2></td>
     <td>
@@ -442,18 +488,15 @@ include("classes/functions.php");
   </tr>
   <tr>
     <td align="center"><input class="span2 container-fluid" type="text" placeholder="Username"></td>
-    <td <form> <input type="checkbox" name="Subscription" value="True" align="center">  Would you like to recieve an Email newsletter about this event?</form></td>
+    <td> <form> <input type="checkbox" name="Subscription" value="True" align="center">  Would you like to recieve an Email newsletter about this event?</form></td>
   </tr>
   <tr>
-    <td align="center">
+    <td height="49" align="center">
 
         <!--Start of poll-->
 
                     <div style="width:500px" class="container-fluid">
-                    <strong>Sign up progression:</strong><span class="pull-right">40%</span>
-                    <div class="progress progress-striped active">
-                    <div class="bar" style="width:40%;"></div>
-                    </div></div></div></div>
+        <strong>Sign up progression:</strong><span class="pull-right">40%</span></div>
                 <!-- End Of Poll --></td>
         <td align="center"><button type="submit" class="btn">Submit &raquo;</button></td>
   </tr>
@@ -472,10 +515,29 @@ include("classes/functions.php");
 
 
                 <!-- End Of timer -->
-                </body>
+                <table border="0">
+                  <tr>
+                    <td>Game</td>
+                    <td>Prizes</td>
+                    <td>Start time</td>
+                    <td>End time</td>
+                  </tr>
+                  
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                   
+                </table>
+    </body>
                 <footer>
                     <hr>
                     <p align="center">Created by Jp Ellis and Jason Zwanepoel</p>
                     <p align="center">&COPY; Gamers Connected 2013 <p>
                 </footer>
                 </html>
+<?php
+mysql_free_result($UGames);
+?>

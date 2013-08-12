@@ -93,7 +93,7 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
   <div class="accordion-group">
     <div class="accordion-heading">
       <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-        View Active staff <i class="icon-th-list pull-right"></i>
+        All Staff <i class="icon-th-list pull-right"></i>
       </a>
     </div>
     <div id="collapseOne" class="accordion-body collapse in">

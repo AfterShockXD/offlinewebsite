@@ -91,7 +91,7 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
         	<div class="navbar navbar-static-top">
         		<div class="navbar-inner">
                	  <div style="float:left;"><a class="brand" href="#">Registered Members</a></div>
-                  <div class="badge badge-inverse" style="float:right; vertical-align:middle; margin:10px;">10</div>
+                  <div class="badge badge-inverse" style="float:right; vertical-align:middle; margin:10px;">err</div>
                 </div>
              <table class="table table-hover table-bordered">
 				<tr class="success">
@@ -113,9 +113,9 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
         	<div class="navbar navbar-static-top">
         		<div class="navbar-inner">
                	  <div style="float:left;"><a class="brand" href="#">Active Staff</a></div>
-                  <div class="badge badge-inverse" style="float:right; vertical-align:middle; margin:10px;">2</div>
+                  <div class="badge badge-inverse" style="float:right; vertical-align:middle; margin:10px;">err</div>
                 </div>
-              <table class="table table-hover table-bordered">
+              <table id="ActiveStaff" class="table table-hover table-bordered">
 				<tr class="success">
                  <td width="33%"><strong>Name</strong></td>
                  <td width="33%"><strong>Surname</strong></td>
@@ -143,9 +143,9 @@ echo '<span class="label label-important">inactive</span>'; ?> </td>
         	<div class="navbar navbar-static-top">
         		<div class="navbar-inner">
                	  <div style="float:left;"><a class="brand" href="#">Active Server</a></div>
-                  <div class="badge badge-inverse" style="float:right; vertical-align:middle; margin:10px;">2</div>
+                  <div class="badge badge-inverse" style="float:right; vertical-align:middle; margin:10px;">err</div>
                 </div>
- 			 <table class="table table-hover table-bordered">
+ 			 <table id="tr" class="table table-hover table-bordered">
 				<tr class="success">
                  <td width="33%"><strong>Server Name</strong></td>
                  <td width="33%"><strong>Game</strong></td>
@@ -173,8 +173,6 @@ echo '<span class="label label-important">inactive</span>'; ?> </td>
 </body>
 <!-- InstanceEnd --></html>
 <?php
-mysql_free_result($Recordset1);
-
 mysql_free_result($activestaff);
 
 mysql_free_result($ActiveEvent);

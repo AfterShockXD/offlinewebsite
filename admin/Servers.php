@@ -191,7 +191,10 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
     <td><?php echo $row_Server['SName']; ?></td>
     <td><?php echo $row_Server['Game']; ?></td>
     <td><?php echo $row_Server['IP']; ?></td>
-    <td><span class="label label-inverse"><?php echo $row_Server['Active']; ?></span></td>
+    <td><?php if ($row_Server ['Active'] == 1)
+echo '<span class="label label-success">Active</span>';
+else
+echo '<span class="label label-important">inactive</span>'; ?></td>
     <td><?php echo $row_Server['Prizes']; ?></td>
     <td><?php echo $row_Server['Start time']; ?> - <?php echo $row_Server['End time']; ?></td>
   </tr>

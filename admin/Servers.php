@@ -175,7 +175,7 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
  
 <div class="tab-content">
   <div class="tab-pane active" id="home">
-  <table align="center" class="table table-condensed">
+  <table align="center" class="table table-condensed well well-large">
 <tr>
     <td>ID</td>
     <td>Server Name</td>

@@ -447,9 +447,7 @@ include("classes/functions.php");
     </div>
 	<div class="container well well-large">
       <!-- Table And Content goes here-->
-      <div class="progress progress-striped active">
-        <div class="bar" style="width:40%;"></div>
-      </div>
+      
       <table width="100%" border="0">
   <tr>
     <td width="200px"><h2 align="center" style="height: 70px;">Time remaining:</h2></td>
@@ -496,7 +494,10 @@ include("classes/functions.php");
         <!--Start of poll-->
 
                     <div style="width:500px" class="container-fluid">
-        <strong>Sign up progression:</strong><span class="pull-right">40%</span></div>
+                    
+        <strong>Sign up progression:</strong><span class="pull-right">40%</span></div><div class="progress progress-striped active">
+        <div class="bar" style="width:40%;"></div>
+      </div>
                 <!-- End Of Poll --></td>
         <td align="center"><button type="submit" class="btn">Submit &raquo;</button></td>
   </tr>

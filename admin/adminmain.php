@@ -1,6 +1,6 @@
 <?php require_once('../Connections/loclahost.php'); ?>
-<?php require_once('Recordsets/ActiveServers.php');
- 	  require_once('Recordsets/ActiveStaff.php');
+<?php require_once('Recordsets/activeservers.php');
+ 	  require_once('Recordsets/ActiveStaff2.php');
 session_start();
 include("../classes/config.php");
 include("../classes/functions.php");
@@ -10,8 +10,7 @@ include("../classes/functions.php");
 if (!isset($_SESSION['uid'])) header('location: index.php');
 
  ?>
- 
- 
+
  
 <!DOCTYPE html>
 <html><!-- InstanceBegin template="/Templates/admin.dwt.php" codeOutsideHTMLIsLocked="false" -->
@@ -92,7 +91,7 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
         	<div class="navbar navbar-static-top">
         		<div class="navbar-inner">
                	  <div style="float:left;"><a class="brand" href="#">Registered Members</a></div>
-                  <div class="badge badge-inverse" style="float:right; vertical-align:middle; margin:10px;">10</div>
+                  <div class="badge badge-inverse" style="float:right; vertical-align:middle; margin:10px;">err</div>
                 </div>
              <table class="table table-hover table-bordered">
 				<tr class="success">
@@ -114,9 +113,9 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
         	<div class="navbar navbar-static-top">
         		<div class="navbar-inner">
                	  <div style="float:left;"><a class="brand" href="#">Active Staff</a></div>
-                  <div class="badge badge-inverse" style="float:right; vertical-align:middle; margin:10px;">2</div>
+                  <div class="badge badge-inverse" style="float:right; vertical-align:middle; margin:10px;">err</div>
                 </div>
-              <table class="table table-hover table-bordered">
+              <table id="ActiveStaff" class="table table-hover table-bordered">
 				<tr class="success">
                  <td width="33%"><strong>Name</strong></td>
                  <td width="33%"><strong>Surname</strong></td>
@@ -126,7 +125,14 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
                 <tr class="info">
                  <td width="33%"><?php echo $row_activestaff['fname']; ?></td>
                  <td width="33%"><?php echo $row_activestaff['lname']; ?></td>
-                 <td width="33%"><?php echo $row_activestaff['status']; ?></td>
+                 <td width="33%"><?php if ($row_activestaff ['status'] == 1)
+echo '<span class="label label-success">Active</span>';
+else
+echo '<span class="label label-important">inactive</span>'; ?> </td>
+										
+										 
+										
+										
               	</tr>
                  <?php } while ($row_activestaff = mysql_fetch_assoc($activestaff)); ?>
 			 </table> 
@@ -137,9 +143,9 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
         	<div class="navbar navbar-static-top">
         		<div class="navbar-inner">
                	  <div style="float:left;"><a class="brand" href="#">Active Server</a></div>
-                  <div class="badge badge-inverse" style="float:right; vertical-align:middle; margin:10px;">2</div>
+                  <div class="badge badge-inverse" style="float:right; vertical-align:middle; margin:10px;">err</div>
                 </div>
- 			 <table class="table table-hover table-bordered">
+ 			 <table id="tr" class="table table-hover table-bordered">
 				<tr class="success">
                  <td width="33%"><strong>Server Name</strong></td>
                  <td width="33%"><strong>Game</strong></td>

@@ -1,7 +1,7 @@
 <?php require_once('Connections/loclahost.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
-function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "")
+function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
 {
   if (PHP_VERSION < 6) {
     $theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
@@ -12,7 +12,7 @@ function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDe
   switch ($theType) {
     case "text":
       $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
-      break;
+      break;    
     case "long":
     case "int":
       $theValue = ($theValue != "") ? intval($theValue) : "NULL";
@@ -447,8 +447,7 @@ include("classes/functions.php");
     </div>
 	<div class="container well well-large">
       <!-- Table And Content goes here-->
-
-      </div>
+      
       <table width="100%" border="0">
   <tr>
     <td width="200px"><h2 align="center" style="height: 70px;">Time remaining:</h2></td>
@@ -495,9 +494,10 @@ include("classes/functions.php");
         <!--Start of poll-->
 
                     <div style="width:500px" class="container-fluid">
-        <strong>Sign up progression:</strong><span class="pull-right">40%</span></div>
-        <div class="progress progress-striped active">
+                    
+        <strong>Sign up progression:</strong><span class="pull-right">40%</span><br /></div><div class="progress progress-striped active">
         <div class="bar" style="width:40%;"></div>
+      </div>
                 <!-- End Of Poll --></td>
         <td align="center"><button type="submit" class="btn">Submit &raquo;</button></td>
   </tr>
@@ -516,7 +516,7 @@ include("classes/functions.php");
 
 
                 <!-- End Of timer -->
-
+             
     </body>
                 <footer>
                     <hr>

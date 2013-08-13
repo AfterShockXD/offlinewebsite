@@ -13,9 +13,9 @@ include("classes/functions.php");
                                          your page, or change to "absolute" then change
                                          the values of the "top" and "left" properties to
                                          position the timer */
-                top: 0px;            /* change to position the timer; must also change
+                top: 2px;            /* change to position the timer; must also change
                                          position to "absolute" above */
-                left: 0px;  	      /* change to position the timer; must also change
+                left: 150px;  	      /* change to position the timer; must also change
                                          position to "absolute" above */
                 width: 270px;
                 height: 5px;
@@ -36,7 +36,7 @@ include("classes/functions.php");
 
             #note {
                 position: absolute;
-                top: 0px;
+                top: -70px;
                 height: 0px;
                 width: 0px;
                 margin: 0 auto;
@@ -63,9 +63,9 @@ include("classes/functions.php");
 
             #timer {
                 position: absolute;
-                top: 0px;
-                left: 0px;
-                margin: 0px auto;
+                top: -70px;
+                left: -120px;
+                margin: 10px auto;
                 text-align: center;
                 width: 260px;
                 height: 40px;
@@ -282,7 +282,7 @@ include("classes/functions.php");
         <div style="padding-top:5px" class="container">
 <div class="hero-unit">
       <h1>Welcome</h1>
-      <p>To Gamers Connected, this is the official offline website where you can be up to date on whats happening at the event and where you can get some support if you are stuck. All the Game Servers Ip's Will be on this website under the Servers TAB, This website has an built in Support system where you can chat with admin to help you.</p>
+      <p>To Gamers Connected, this is an official offline website where you can be up to date on whats happening at the event and where you can get some support if you are stuck. All the Game Servers Ip's Will be on this website under the Servers TAB, This website has an built in Support system where you can chat with admin to help you.</p>
       <p>
 
           <!-- LiveZilla Chat Button Link Code (ALWAYS PLACE IN BODY ELEMENT) --><a href="javascript:void(window.open('http://127.0.0.1/offlinewebsite/LiveZilla/chat.php?acid=42e4e','','width=590,height=760,left=0,top=0,resizable=yes,menubar=no,location=no,status=yes,scrollbars=yes'))" class="lz_cbl"><img src="http://127.0.0.1/offlinewebsite/LiveZilla/image.php?acid=4d7eb&amp;id=3&amp;type=inlay" width="200" height="50" style="border:0px;" alt="LiveZilla Live Chat Software"></a><!-- http://www.LiveZilla.net Chat Button Link Code --><!-- LiveZilla Tracking Code (ALWAYS PLACE IN BODY ELEMENT) --><div id="livezilla_tracking" style="display:none"></div><script type="text/javascript">
@@ -372,45 +372,45 @@ include("classes/functions.php");
 
                   </div>
               </div>
-    <div class="well well-large container">
-      <p>Registerd Users: <span style="width:5%;" class="label label-info">30</span></p>
-                  <table class="table table-condensed">
-                    <tr class="success">
-                      <td width="33%"><strong>Username</strong></td>
-                      <td width="33%"><strong>First Name</strong></td>
-                      <td width="33%"><strong>Last Name</strong></td>
-                    </tr>
-                    <tr>
-                      <td>&nbsp;</td>
-                      <td>&nbsp;</td>
-                      <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                      <td>&nbsp;</td>
-                      <td>&nbsp;</td>
-                      <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                      <td>&nbsp;</td>
-                      <td>&nbsp;</td>
-                      <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                      <td>&nbsp;</td>
-                      <td>&nbsp;</td>
-                      <td>&nbsp;</td>
-                    </tr>
-                  </table>
-    </div>
-	<div class="container well well-large">
-      <!-- Table And Content goes here-->
- <table width="100%" border="0">
-  <tr>
-    <td width="200px"><h2 align="center" style="height: 70px;">Time remaining:</h2></td>
-    <td>
-        <!--Start of timer 1-->
+              <div>
+                  <div class="well well-large">
+                      <p>Registerd Users: <span style="width:5%; text-align:center" class="label label-info">30</span></p>
+                      <table class="table table-condensed">
+                          <tr class="success">
+                              <td width="33%"><strong>Username</strong></td>
+                              <td width="33%"><strong>First Name</strong></td>
+                              <td width="33%"><strong>Last Name</strong></td>
+                          </tr>
+                          <tr>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                          </tr>
+                      </table>
+                  </div>
+
+                </div>
+                <div>
+                    <!--Start of timer 1-->
+                    <div class="well well-large" style="height: 110px; width: 250px;">
+                <h2 align="center" style="padding-left:10px; position: relative; top: -20px; left: -10px;">Time remaining</h2>
                 <div class="pull-right" id="holder">
-                    <div   id="timer" style="left: -70px; top:-30px;">
+                    <div   id="timer" style="padding-left:10px; position: relative; top: -40px; left: -144px;">
                         <div id="note"></div>
                         <div id="countdown">
                             <img height=21 src="img/digital-numbers/bkgd.gif" width=16 name="day1">
@@ -434,44 +434,19 @@ include("classes/functions.php");
                         </div>
                     </div>
                 </div>
-<!-- End Of timer --></td>
-  </tr>
-  <tr>
-    <td align="center"><input class="span2 container-fluid" type="text" placeholder="Name"></td>
-    <td align="center"><input class="span2 container-fluid" type="text" placeholder="Email"></td>
-  </tr>
-  <tr>
-    <td align="center"><input class="span2 container-fluid" type="text" placeholder="Username"></td>
-    <td <form> <input type="checkbox" name="Subscription" value="True" align="center">  Would you like to recieve an Email newsletter about this event?</form></td>
-  </tr>
-  <tr>
-    <td align="center">
+<!-- End Of timer -->
 
-        <!--Start of poll-->
 
-                    <div style="width:500px" class="container-fluid">
-                    <strong>Sign up progression:</strong><span class="pull-right">40%</span>
+		<!--Start of poll-->
+                    <table  class="well well-large">
+                    <div style="width:500px; padding-left:300px" class="container-fluid">
+                    <strong>Yes</strong><span class="pull-right">40%</span>
                     <div class="progress progress-striped active">
                     <div class="bar" style="width:40%;"></div>
-                    </div></div></div></div>
-                <!-- End Of Poll --></td>
-        <td align="center"><button type="submit" class="btn">Submit &raquo;</button></td>
-  </tr>
-</table>
-
-
-
-
-
-    </div>
-
-
-
-
-		<!--Add your Second Div-->
-
-
-                <!-- End Of timer -->
+                    </div>
+                    </table>
+                    </div></div></div>
+                <!-- End Of Poll -->
                 </body>
                 <footer>
                     <hr>

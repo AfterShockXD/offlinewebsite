@@ -11,28 +11,34 @@
 }
     </style>
 <meta charset="utf-8">
-<script type="text/javascript" src="js/swfobject/swfobject.js"></script>
-<script type="text/javascript">
-  var flashvars = {};
-  flashvars.cssSource = "css/piecemaker.css";
-  flashvars.xmlSource = "piecemaker.xml";
-	
-  var params = {};
-  params.play = "true";
-  params.menu = "false";
-  params.scale = "showall";
-  params.wmode = "transparent";
-  params.allowfullscreen = "true";
-  params.allowscriptaccess = "always";
-  params.allownetworking = "all";
-  
-  swfobject.embedSWF('piecemaker.swf', 'piecemaker', '960', '440', '10', null, flashvars,    
-  params, null);
+
 
 </script>
+ <!-- Gallery start -->
 
+ <style>
 
+            /* Demo styles */
 
+            body{border-top:4px solid #000;}
+            .content{color:#777;font:12px/1.4 "helvetica neue",arial,sans-serif;width:620px;margin:20px auto;}
+            /*h1{font-size:12px;font-weight:normal;color:#ddd;margin:0;}
+            p{margin:0 0 20px}
+            a {color:#22BCB9;text-decoration:none;}
+            .cred{margin-top:20px;font-size:11px;}
+
+            /* This rule is read by Galleria to define the gallery height: */
+            #galleria{height:320px}
+
+        </style>
+
+        <!-- load jQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+
+        <!-- load Galleria -->
+        <script src="galleria/galleria-1.2.9.min.js"></script>
+
+<!-- end -->
 
   </head>
   <body>
@@ -62,37 +68,84 @@
                 <ul class="dropdown-menu">
                <div align="center"><img style="width:100px; height:100px;" src="img/png.png" class="img-circle"  ></div>
                <div align="center"><strong>Name Surname</strong></div>
-               
-               
+
+
                   <li class="divider"></li>
                   <li><a href="#"><i class="icon-lock"></i> Login</a></li>
                   <li><a href="#"><i class="icon-user"></i> Register</a></li>
                   <li><a href="#"><i class="icon-cog"></i> Edit Account</a></li>
-                  
+
                 </ul>
                 </li>
               </ul>
     		</div>
   </div>
-  
+
   <!--End of Nav-->
-  
-    <div align="center" class="container">
-        <div id="piecemaker"></div>
+
+
+
+    <div class="content">
+        <h1>Apocolypse 26/04/2013</h1>
+
+        <!-- Adding gallery images. We use resized thumbnails here for better performance, but it’s not necessary -->
+
+        <div id="galleria">
+        <a href="../img/WIP.jpg">
+                <img
+                    src="../img/WIP.jpg",
+                    data-big="../img/WIP.jpg""
+                    data-title="Unknown"
+                    data-description="Apocalypse(26 April 2013)"
+                >
+            </a>
+
+           <!-- <a href="../img/lanold/640x640uploads~images~26 April 2013 Apocalypse~Apocalypse26.jpg">
+                <img
+                    src="../img/lanold/640x640uploads~images~26 April 2013 Apocalypse~Apocalypse26.jpg",
+                    data-big="../img/lanold/640x640uploads~images~26 April 2013 Apocalypse~Apocalypse26.jpg""
+                    data-title="Unknown"
+                    data-description="Apocalypse(26 April 2013)"
+                >
+            </a>-->
+
+
+        </div>
+        <div>&numsp;</div>
+        <h1>Images:</h1>
     </div>
-    <div class="container well well-large">
-    
-    
-    
-    
-    
-    </div>
+
+    <script>
+
+    // Load the classic theme
+    Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+
+   Galleria.run('#galleria', {
+    autoplay: 7000, // will move forward every 7 seconds
+    transition: 'fade',
+    imageCrop: false,
+    clicknext: false,
+    fullscreenDoubleTap: true,
+    lightbox: true,
+
+});
+    Galleria.ready(function(options) {
+
+    // 'this' is the gallery instance
+    // 'options' is the gallery options'
+
+});
+
+
+    </script>
 
 
 
-  
-  
-  
+
+
+
+
+
   <script src="http://code.jquery.com/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
 </body>

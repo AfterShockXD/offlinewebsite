@@ -42,7 +42,7 @@ include("../classes/functions.php");
                     <li class="divider-vertical"></li>
                     <li <?php if ($nav == "administrators") echo "class='active'"; ?>><a href="administrators.php">Administrators</a></li>
                     <li class="divider-vertical"></li>
-                    <li <?php if ($nav == "events") echo "class='active'"; ?>><a href="events.php">Events</a></li>
+                    <li <?php if ($nav == "events") echo "class='active'"; ?>><a href="gallery.php">Gallary</a></li>
                     <li class="divider-vertical"></li>
                     <li <?php if ($nav == "members") echo "class='active'"; ?>><a href="members.php">Members</a></li>
                     <li class="divider-vertical"></li>

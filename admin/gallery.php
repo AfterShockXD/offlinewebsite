@@ -1,10 +1,10 @@
-<?php 
+<?php
 session_start();
 include("../classes/config.php");
 include("../classes/functions.php");
 //var_dump($_SESSION);
 
-//exit(); 
+//exit();
 if (!isset($_SESSION['uid'])) header('location: index.php');
 ?>
 <!DOCTYPE html>
@@ -37,7 +37,7 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
   <!-- InstanceEndEditable -->
 </head>
 <body>
-   
+
   <div class="navbar navbar-static-top">
     		<div  class="navbar-inner ">
             	<a  class="brand" href="../index.php"><strong>Gamers Connected</strong></a>
@@ -47,14 +47,14 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
                     <li class="divider-vertical"></li>
                     <li <?php if ($nav == "administrators") echo "class='active'"; ?>><a href="administrators.php">Administrators</a></li>
                     <li class="divider-vertical"></li>
-                    <li <?php if ($nav == "events") echo "class='active'"; ?>><a href="events.php">Events</a></li>
+                    <li <?php if ($nav == "events") echo "class='active'"; ?>><a href="gallery.php">Gallary</a></li>
                     <li class="divider-vertical"></li>
                     <li <?php if ($nav == "members") echo "class='active'"; ?>><a href="members.php">Members</a></li>
                     <li class="divider-vertical"></li>
                     <li <?php if ($nav == "servers") echo "class='active'"; ?>><a href="servers.php">Servers</a></li>
                     <li class="divider-vertical"></li>
                  </ul>
-                 
+
                  <ul class="nav pull-right">
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -73,11 +73,11 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
                     </ul>
                   </li>
                 </ul>
-                 
-                 
+
+
       		</div>
      </div>
-       
+
        <div style="padding-top:5px" class="container">
 	   <!-- InstanceBeginEditable name="main" -->
        <ul class="nav nav-tabs" id="myTab">
@@ -89,29 +89,28 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
 
 <div class="tab-content">
   <div class="tab-pane active" id="home">
-  
-  
-  
+
+
+
   </div>
   <div class="tab-pane" id="profile">
-  
-  
-  
-  
+
+
+
+
   </div>
   <div class="tab-pane" id="messages">
-  
-  
-  
-  
+
+
+
+
   </div>
   <div class="tab-pane" id="settings">
-  
-  
-  
+
+
+
   </div>
 </div>
-
 <script>
 $('#myTab a').click(function (e) {
   e.preventDefault();
@@ -122,13 +121,13 @@ $('#myTab a').click(function (e) {
     $('#myTab a:last').tab('show');
   })
 </script>
-	  
-	   
-	   
+
+
+
 	   <!-- InstanceEndEditable -->
-       
+
 
 		</div>
-    
+
 </body>
 <!-- InstanceEnd --></html>

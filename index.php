@@ -337,8 +337,7 @@ include("classes/functions.php");
 
 
                             <li class="divider"></li>
-                            <li><a href="#"><i class="icon-lock"></i> Login</a></li>
-                            <li><a href="#"><i class="icon-user"></i> Register</a></li>
+                            <li><a href="#myModal" data-toggle="modal" data-target="#myModal"><i class="icon-lock"></i> Login</a></li>
                             <li><a href="#"><i class="icon-cog"></i> Edit Account</a></li>
                             <li class="divider"></li>
                             <li><a href="admin/index.php"><i class="icon-star-empty"></i> Staff login</a></li>
@@ -482,13 +481,13 @@ var script = document.createElement("script");script.async=true;script.type="tex
 <!-- Maths for poll -->
 
 
-    <?php#
-    #mysql_select_db($database_loclahost, $loclahost);
-    #$MaxTotalY = mysql_query("SELECT MAX(Total) FROM tblresponses");
-    #$ResponesY =  $MaxTotalY;
-    #$totalNeeded = 500;
-    #$oldAmount = $ResponesY / $totalNeeded  ;
-    #$newAmount = $oldAmount * 100 ;
+    <?php
+  // mysql_select_db($database_loclahost, $loclahost);
+  // $MaxTotalY = mysql_query("SELECT MAX(Total) FROM tblresponses");
+  // $ResponesY =  $MaxTotalY;
+  // $totalNeeded = 500;
+  // $oldAmount = $ResponesY / $totalNeeded  ;
+  // $newAmount = $oldAmount * 100 ;
 
     ?>
 
@@ -498,10 +497,10 @@ var script = document.createElement("script");script.async=true;script.type="tex
 
                  <!--   <div style="width:500px" class="container-fluid">
 
-        <strong>Sign up progression:</strong><span class="pull-right"><?php #echo ("$newAmount"); ?>%</span><br /></div>
+        <strong>Sign up progression:</strong><span class="pull-right"><?php //echo ("$newAmount"); ?>%</span><br /></div>
         <div class="progress progress-striped active">
 
-        <div class="bar" style="width: <?php  #echo ("$newAmount"); ?>%" max="100" </div>
+        <div class="bar" style="width: <?php  //echo ("$newAmount"); ?>%" max="100" </div>
 
       </div>
                 <!-- End Of Poll --></td>
@@ -510,11 +509,31 @@ var script = document.createElement("script");script.async=true;script.type="tex
 </table>
 
 
+<!-- Button to trigger modal -->
 
-
-
+ 
+<!-- Modal -->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Login</h3>
+  </div>
+  <div class="modal-body">
+   <div class="alert alert-error">
+      <a class="close" data-dismiss="alert" href="#">×</a>Incorrect Username or Password!
+  </div>
+    <div align="center">
+        <form method="POST" action="" accept-charset="UTF-8">
+        <input type="text" id="username" class="span4" name="username" placeholder="Username">
+        <input type="password" id="password" class="span4" name="password" placeholder="Password">    
+        </div>
+        <div class="modal-footer">
+        <button type="submit" name="submit" class="btn btn-info btn-block">Sign in</button>
+        </form>
     </div>
-
+  </div>
+ </div>
+</div>
 
 
 
@@ -526,8 +545,8 @@ var script = document.createElement("script");script.async=true;script.type="tex
 </body>
     <footer>
         <hr>
-        <p align="center">Created by Jp Ellis and Jason Zwanepoel</p>
-        <p align="center">&COPY; Gamers Connected 2013 <p>
+        <p align="center">Created by <b>Jp Ellis</b> and <b>Jason Zwanepoel</b></p>
+        <p align="center"><Strong>&COPY; Gamers Connected 2013</Strong> <p>
     </footer>
 </html>
 

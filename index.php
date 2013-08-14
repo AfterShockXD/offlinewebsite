@@ -350,7 +350,7 @@ include("classes/functions.php");
         <div style="padding-top:5px" class="container">
 <div class="hero-unit">
       <h1>Welcome</h1>
-      <p>To Gamers Connected, this is the official offline website where you can be up to date on whats happening at the event and where you can get some support if you are stuck. All the Game Servers Ip's Will be on this website under the Servers TAB, This website has an built in Support system where you can chat with admin to help you.</p>
+      <p>To Gamers Connected, this is the official offline website where you can be up to date on whats happening at the event and where you can get some support if you are stuck. All the Game Servers Ip's Will be on this website under the Servers TAB, This website has an built in Support system where you can chat with admin to help you. *Please do note website is still in BETA.</p>
       <p><button class="btn btn-large"><strong><!-- LiveZilla Text Chat Link Code (ALWAYS PLACE IN BODY ELEMENT) --><script type="text/javascript" id="lz_textlink" src="http://127.0.0.1/offlinewebsite/LiveZilla/image.php?acid=10942&amp;tl=1&amp;srv=aHR0cDovLzEyNy4wLjAuMS9vZmZsaW5ld2Vic2l0ZS9MaXZlWmlsbGEvY2hhdC5waHA,YWNpZD0wNDExOA__&amp;tlont=TGl2ZSBIZWxwIChPbmxpbmUp&amp;tloft=TGl2ZSBIZWxwIChPZmZsaW5lKQ__"></script><!-- http://www.LiveZilla.net Text Chat Link Code --><!-- LiveZilla Tracking Code (ALWAYS PLACE IN BODY ELEMENT) --><div id="livezilla_tracking" style="display:none"></div><script type="text/javascript">
 var script = document.createElement("script");script.async=true;script.type="text/javascript";var src = "http://127.0.0.1/offlinewebsite/LiveZilla/server.php?acid=44360&request=track&output=jcrpt&nse="+Math.random();setTimeout("script.src=src;document.getElementById('livezilla_tracking').appendChild(script)",1);</script><noscript><img src="http://127.0.0.1/offlinewebsite/LiveZilla/server.php?acid=44360&amp;request=track&amp;output=nojcrpt" width="0" height="0" style="visibility:hidden;" alt=""></noscript><!-- http://www.LiveZilla.net Tracking Code --></strong></button>
       </p>
@@ -363,22 +363,22 @@ var script = document.createElement("script");script.async=true;script.type="tex
                       <ul class="thumbnails">
                           <li class="span4">
                               <div class="thumbnail">
-                                  <img src="img/png.png" alt="">
-                                  <h4 align="center">1st Prize</h4>
+                                  <img src="img/Alien 1.bmp" alt="">
+                                  <h4 align="center">1st Prize Winner</h4>
                                   <p>This will be updated as soon as someone wins.</p>
                               </div>
                           </li>
                           <li class="span4">
                               <div class="thumbnail">
-                                  <img src="img/png.png" alt="">
-                                  <h4 align="center">2nd Prize</h4>
+                                  <img src="img/Monkey 2.bmp" alt="">
+                                  <h4 align="center">2nd Prize Winner</h4>
                                   <p>This will be updated as soon as someone wins.</p>
                               </div>
                           </li>
                           <li class="span4">
                               <div class="thumbnail">
-                                  <img  src="img/png.png" alt="" width="300px" height="200px">
-                                  <h4 align="center">3rd Prize</h4>
+                                  <img  src="img/Bear.bmp">
+                                  <h4 align="center">3rd Prize Winner</h4>
                                   <p>This will be updated as soon as someone wins.</p>
                               </div>
                           </li>
@@ -410,11 +410,11 @@ var script = document.createElement("script");script.async=true;script.type="tex
 
                   </div>
               </div>
-    <div class="well well-large container">
+    <div class="well well-small container">
       <div class="navbar navbar-static-top">
         		<div class="navbar-inner">
                	  <div style="float:left;"><a class="brand" href="#">Registerd Members</a></div>
-                  <div class="badge badge-inverse" style="float:right; vertical-align:middle; margin:10px;">1</div>
+                  <div class="badge badge-inverse" style="float:right; vertical-align:middle; margin:10px;">Info</div>
                 </div></div>
                   <table class="table table-condensed table-hover">
                     <tr class="success">

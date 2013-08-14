@@ -81,7 +81,7 @@
       <div class="accordion-inner">
         1) Open Dc++ <br />
         2) Click on File / Quick Connect <br />
-        3) Eneter the ip Address: <br />
+        3) Enter the ip Address provided under <a href="serverlist.php"><button class="btn-info">Servers</button></a> <br />
         4) press <button class="btn">OK</button> <br />
         <strong> Shortcut key to Quick Connect "Ctrl+Q"</strong> 
       </div>
@@ -110,7 +110,7 @@
     <div id="collapsefour" class="accordion-body collapse">
       <div class="accordion-inner">
         1) Open your TeamSpeak3 Client <br />
-        2) Click on the Connect Tab "Letf Top of Window" Then Click On Connect <br />
+        2) Click on the Connect Tab "Top Left of Window" Then Click On Connect <br />
         3) Enter the Ip Address into the Server Address: <br />
         4) Fill in your Nicname and press <button class="btn">Connect</button> <br />
       </div>
@@ -119,12 +119,12 @@
   <div class="accordion-group">
     <div class="accordion-heading">
       <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapsefive">
-        Q) <strong>Where do i get DC++ or TeamSpeak 3 ?</strong>
+        Q) <strong>Where do I get DC++ or TeamSpeak 3 ?</strong>
       </a>
     </div>
     <div id="collapsefive" class="accordion-body collapse">
       <div class="accordion-inner">
-        You can get all clients and Softwere under <a href="download.php"><button class="btn-info">Downloads</button></a>
+        You can get all clients and Softwere under <a href="downloads.php"><button class="btn-info">Downloads</button></a>
       </div>
     </div>
   </div>

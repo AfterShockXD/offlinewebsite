@@ -93,7 +93,7 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
   <div class="accordion-group">
     <div class="accordion-heading">
       <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-        All Staff <i class="icon-th-list pull-right"></i>
+        <i class="icon-user"></i> All Staff
       </a>
     </div>
     <div id="collapseOne" class="accordion-body collapse in">
@@ -111,7 +111,7 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
                  <td width="33%"><?php if ($row_admin ['status'] == 1)
 echo '<span class="label label-success">Active</span>';
 else
-echo '<span class="label label-important">inactive</span>'; ?></td>
+echo '<span class="label label-important">inactive</span>'; ?> <a href="#collapseThree"><i class="icon-edit pull-right"></i></a></td>
               	</tr>
                 <?php } while ($row_admin = mysql_fetch_assoc($admin)); ?> 
 		  </table>
@@ -121,7 +121,7 @@ echo '<span class="label label-important">inactive</span>'; ?></td>
   <div class="accordion-group">
     <div class="accordion-heading">
       <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-        Add Staff <i class=" icon-user pull-right"></i>
+       <i class="icon-plus"></i> Add Staff
       </a>
     </div>
     <div id="collapseTwo" class="accordion-body collapse">
@@ -150,7 +150,7 @@ echo '<span class="label label-important">inactive</span>'; ?></td>
             </tr>
             <tr valign="baseline">
               <td nowrap align="right">&nbsp;</td>
-              <td><input class="btn" type="submit" value="Add Admin"></td>
+              <td><input class="btn" type="submit" value="Add Member"</td>
             </tr>
           </table>
           <input type="hidden" name="MM_insert" value="form1">
@@ -162,7 +162,7 @@ echo '<span class="label label-important">inactive</span>'; ?></td>
 <div class="accordion-group">
     <div class="accordion-heading">
       <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-        Edit/Remove Staff <i class="icon-edit pull-right"></i>
+      <i class="icon-remove"></i> Edit/Remove Staff
       </a>
     </div>
     <div id="collapseThree" class="accordion-body collapse">

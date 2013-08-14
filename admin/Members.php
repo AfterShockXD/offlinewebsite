@@ -91,10 +91,8 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
 	   <!-- InstanceBeginEditable name="main" -->
        
 	   <ul class="nav nav-tabs" id="myTab">
-          <li class="active"><a href="#home">Members</a></li>
-          <li><a href="#profile">Create Member</a></li>
-          <li><a href="#messages">Active Members</a></li>
-          <li><a href="#settings">Inactive Membsers</a></li>
+          <li class="active"><a href="#home"><i class="icon-th-list"></i> Members</a></li>
+          <li><a href="#profile"><i class="icon-plus"></i> Create Member</a></li>
       </ul>
  
     <div class="tab-content well well-small">
@@ -152,22 +150,6 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
           <input type="hidden" name="MM_insert" value="form1">
         </form>
       </div>
-      <div class="tab-pane" id="messages">
-      
-      
-      
-      
-      
-       ...
-     </div>
-      <div class="tab-pane" id="settings">
-      
-      
-      
-      
-      
-       ...
-     </div>
     </div>
  
 <script>

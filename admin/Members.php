@@ -1,5 +1,10 @@
-<?php 
+<?php require_once('../Connections/loclahost.php'); 
+	  require_once('../Connections/loclahost.php');
+	  require_once('Recordsets/insertmembers.php');
+	  require_once('Recordsets/memberlist.php');
+ ?>
 
+<?php
 session_start();
 include("../classes/config.php");
 include("../classes/functions.php");
@@ -92,38 +97,77 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
           <li><a href="#settings">Inactive Membsers</a></li>
       </ul>
  
-    <div class="tab-content">
+    <div class="tab-content well well-small">
       <div class="tab-pane active" id="home">
-      
-      
-      
-      
-      
-      ...</div>
+      <div class="navbar navbar-static-top">
+        		<div class="navbar-inner">
+               	  <div style="float:left;"><a class="brand" href="#">Member List</a></div>
+                  <div class="badge badge-inverse" style="float:right; vertical-align:middle; margin:10px;">Ammount</div>
+                </div></div>
+        <table align="center" class="table table-condensed">
+          <tr class="info">
+            <td><strong>Username</strong></td>
+            <td><strong>First Name</strong></td>
+            <td><strong>Last Name</strong></td>
+            <td><strong>Active</strong></td>
+          </tr>
+          <?php do { ?>
+            <tr class="success">
+              <td><?php echo $row_Usersregisers['uname']; ?></td>
+              <td><?php echo $row_Usersregisers['fname']; ?></td>
+              <td><?php echo $row_Usersregisers['lname']; ?></td>
+              <td><?php if ($row_Usersregisers['active'] == 1) echo '<span class="label label-success">Active</span>'; else echo '<span class="label label-important">inactive</span>'; ?></td>
+            </tr>
+            <?php } while ($row_Usersregisers = mysql_fetch_assoc($Usersregisers)); ?>
+        </table>
+      </div>
       <div class="tab-pane" id="profile">
-      
-      
-      
-      
-      
-      
-      ...</div>
+        <form method="post" name="form1" action="<?php echo $editFormAction; ?>">
+          <table align="center">
+            <tr valign="baseline">
+              <td nowrap align="right">User Name:</td>
+              <td><input type="text" name="uname" value="" size="32"></td>
+            </tr>
+            <tr valign="baseline">
+              <td nowrap align="right">First Name:</td>
+              <td><input type="text" name="fname" value="" size="32"></td>
+            </tr>
+            <tr valign="baseline">
+              <td nowrap align="right">Last Name:</td>
+              <td><input type="text" name="lname" value="" size="32"></td>
+            </tr>
+            <tr valign="baseline">
+              <td nowrap align="right">Password:</td>
+              <td><input type="password" name="password" value="123pass" size="32"></td>
+            </tr>
+            <tr valign="baseline">
+              <td nowrap align="right">Active:</td>
+              <td><input type="checkbox" name="active" value="" checked></td>
+            </tr>
+            <tr valign="baseline">
+              <td nowrap align="right">&nbsp;</td>
+              <td><input class="btn btn-primary" type="submit" value="Add member"></td>
+            </tr>
+          </table>
+          <input type="hidden" name="MM_insert" value="form1">
+        </form>
+      </div>
       <div class="tab-pane" id="messages">
       
       
       
       
       
-      
-      ...</div>
+       ...
+     </div>
       <div class="tab-pane" id="settings">
       
       
       
       
       
-      
-      ...</div>
+       ...
+     </div>
     </div>
  
 <script>
@@ -145,3 +189,6 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
     
 </body>
 <!-- InstanceEnd --></html>
+<?php
+mysql_free_result($Usersregisers);
+?>

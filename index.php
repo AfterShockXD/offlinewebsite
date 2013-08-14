@@ -1,7 +1,7 @@
 <?php require_once('Connections/loclahost.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
-function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "")
+function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
 {
   if (PHP_VERSION < 6) {
     $theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
@@ -12,7 +12,7 @@ function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDe
   switch ($theType) {
     case "text":
       $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
-      break;
+      break;    
     case "long":
     case "int":
       $theValue = ($theValue != "") ? intval($theValue) : "NULL";
@@ -31,31 +31,34 @@ function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDe
 }
 }
 
-$maxRows_UGames = 5;
-$pageNum_UGames = 0;
-if (isset($_GET['pageNum_UGames'])) {
-  $pageNum_UGames = $_GET['pageNum_UGames'];
+$maxRows_Rusers = 10;
+$pageNum_Rusers = 0;
+if (isset($_GET['pageNum_Rusers'])) {
+  $pageNum_Rusers = $_GET['pageNum_Rusers'];
 }
-$startRow_UGames = $pageNum_UGames * $maxRows_UGames;
+$startRow_Rusers = $pageNum_Rusers * $maxRows_Rusers;
 
-$colname_UGames = "1";
-if (isset($_GET['Active'])) {
-  $colname_UGames = $_GET['Active'];
+$colname_Rusers = "1";
+if (isset($_GET['1'])) {
+  $colname_Rusers = $_GET['1'];
 }
 mysql_select_db($database_loclahost, $loclahost);
-$query_UGames = sprintf("SELECT Game, Prizes, `Start time`, `End time` FROM tblservers WHERE Active = %s ORDER BY `Start time` DESC", GetSQLValueString($colname_UGames, "int"));
-$query_limit_UGames = sprintf("%s LIMIT %d, %d", $query_UGames, $startRow_UGames, $maxRows_UGames);
-$UGames = mysql_query($query_limit_UGames, $loclahost) or die(mysql_error());
-$row_UGames = mysql_fetch_assoc($UGames);
+$query_Rusers = sprintf("SELECT uname, fname, lname FROM tblmemers WHERE active = %s ORDER BY id DESC", GetSQLValueString($colname_Rusers, "int"));
+$query_limit_Rusers = sprintf("%s LIMIT %d, %d", $query_Rusers, $startRow_Rusers, $maxRows_Rusers);
+$Rusers = mysql_query($query_limit_Rusers, $loclahost) or die(mysql_error());
+$row_Rusers = mysql_fetch_assoc($Rusers);
 
-if (isset($_GET['totalRows_UGames'])) {
-  $totalRows_UGames = $_GET['totalRows_UGames'];
+if (isset($_GET['totalRows_Rusers'])) {
+  $totalRows_Rusers = $_GET['totalRows_Rusers'];
 } else {
-  $all_UGames = mysql_query($query_UGames);
-  $totalRows_UGames = mysql_num_rows($all_UGames);
+  $all_Rusers = mysql_query($query_Rusers);
+  $totalRows_Rusers = mysql_num_rows($all_Rusers);
 }
-$totalPages_UGames = ceil($totalRows_UGames/$maxRows_UGames)-1;
+$totalPages_Rusers = ceil($totalRows_Rusers/$maxRows_Rusers)-1;
 ?>
+<?php require_once('Connections/loclahost.php');
+	  require_once('admin/Recordsets/upcomingGames.php');
+ ?>
 <?php
 include("classes/config.php");
 include("classes/functions.php");
@@ -349,19 +352,12 @@ include("classes/functions.php");
 <div class="hero-unit">
       <h1>Welcome</h1>
       <p>To Gamers Connected, this is the official offline website where you can be up to date on whats happening at the event and where you can get some support if you are stuck. All the Game Servers Ip's Will be on this website under the Servers TAB, This website has an built in Support system where you can chat with admin to help you.</p>
-      <p>
-
-          <!-- LiveZilla Chat Button Link Code (ALWAYS PLACE IN BODY ELEMENT) --><a href="javascript:void(window.open('http://127.0.0.1/offlinewebsite/LiveZilla/chat.php?acid=42e4e','','width=590,height=760,left=0,top=0,resizable=yes,menubar=no,location=no,status=yes,scrollbars=yes'))" class="lz_cbl"><img src="http://127.0.0.1/offlinewebsite/LiveZilla/image.php?acid=4d7eb&amp;id=3&amp;type=inlay" width="200" height="50" style="border:0px;" alt="LiveZilla Live Chat Software"></a><!-- http://www.LiveZilla.net Chat Button Link Code --><!-- LiveZilla Tracking Code (ALWAYS PLACE IN BODY ELEMENT) --><div id="livezilla_tracking" style="display:none"></div><script type="text/javascript">
-            var script = document.createElement("script");
-            script.async = true;
-            script.type = "text/javascript";
-            var src = "http://127.0.0.1/offlinewebsite/LiveZilla/server.php?acid=294b6&request=track&output=jcrpt&nse=" + Math.random();
-            setTimeout("script.src=src;document.getElementById('livezilla_tracking').appendChild(script)", 1);</script><noscript><img src="http://127.0.0.1/offlinewebsite/LiveZilla/server.php?acid=294b6&amp;request=track&amp;output=nojcrpt" width="0" height="0" style="visibility:hidden;" alt=""></noscript><!-- http://www.LiveZilla.net Tracking Code -->
-
+      <p><button class="btn btn-large"><!-- LiveZilla Text Chat Link Code (ALWAYS PLACE IN BODY ELEMENT) --><script type="text/javascript" id="lz_textlink" src="http://127.0.0.1/offlinewebsite/LiveZilla/image.php?acid=08e39&amp;tl=1&amp;srv=aHR0cDovLzEyNy4wLjAuMS9vZmZsaW5ld2Vic2l0ZS9MaXZlWmlsbGEvY2hhdC5waHA,YWNpZD1hMTQ3NQ__&amp;tlont=TGl2ZSBIZWxwIChTdGFydCBDaGF0KQ__&amp;tloft=TGl2ZSBIZWxwIChMZWF2ZSBNZXNzYWdlKQ__"></script><!-- http://www.LiveZilla.net Text Chat Link Code --><!-- LiveZilla Tracking Code (ALWAYS PLACE IN BODY ELEMENT) --><div id="livezilla_tracking" style="display:none"></div><script type="text/javascript">
+var script = document.createElement("script");script.async=true;script.type="text/javascript";var src = "http://127.0.0.1/offlinewebsite/LiveZilla/server.php?acid=84424&request=track&output=jcrpt&nse="+Math.random();setTimeout("script.src=src;document.getElementById('livezilla_tracking').appendChild(script)",1);</script><noscript><img src="http://127.0.0.1/offlinewebsite/LiveZilla/server.php?acid=84424&amp;request=track&amp;output=nojcrpt" width="0" height="0" style="visibility:hidden;" alt=""></noscript><!-- http://www.LiveZilla.net Tracking Code --></button>
       </p>
     </div>
 
-          <div class="container">
+    <div class="container">
               <div class="row-fluid">
                   <div class="span6">
                       <h2>Recent Prize Winners:</h2>
@@ -416,33 +412,24 @@ include("classes/functions.php");
                   </div>
               </div>
     <div class="well well-large container">
-      <p>Registerd Users: <span style="width:5%;" class="label label-info">30</span></p>
-                  <table class="table table-condensed">
+      <div class="navbar navbar-static-top">
+        		<div class="navbar-inner">
+               	  <div style="float:left;"><a class="brand" href="#">Registerd Members</a></div>
+                  <div class="badge badge-inverse" style="float:right; vertical-align:middle; margin:10px;">1</div>
+                </div></div>
+                  <table class="table table-condensed table-hover">
                     <tr class="success">
                       <td width="33%"><strong>Username</strong></td>
                       <td width="33%"><strong>First Name</strong></td>
                       <td width="33%"><strong>Last Name</strong></td>
                     </tr>
-                    <tr>
-                      <td>&nbsp;</td>
-                      <td>&nbsp;</td>
-                      <td>&nbsp;</td>
+                     <?php do { ?>
+                    <tr class="info">
+                      <td><?php echo $row_Rusers['uname']; ?></td>
+                      <td><?php echo $row_Rusers['fname']; ?></td>
+                      <td><?php echo $row_Rusers['lname']; ?></td>
                     </tr>
-                    <tr>
-                      <td>&nbsp;</td>
-                      <td>&nbsp;</td>
-                      <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                      <td>&nbsp;</td>
-                      <td>&nbsp;</td>
-                      <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                      <td>&nbsp;</td>
-                      <td>&nbsp;</td>
-                      <td>&nbsp;</td>
-                    </tr>
+                    <?php } while ($row_Rusers = mysql_fetch_assoc($Rusers)); ?>
                   </table>
     </div>
 	<div class="container well well-large">
@@ -535,14 +522,17 @@ include("classes/functions.php");
 
 
                 <!-- End Of timer -->
+              
+</body>
+    <footer>
+        <hr>
+        <p align="center">Created by Jp Ellis and Jason Zwanepoel</p>
+        <p align="center">&COPY; Gamers Connected 2013 <p>
+    </footer>
+</html>
 
-    </body>
-                <footer>
-                    <hr>
-                    <p align="center">Created by Jp Ellis and Jason Zwanepoel</p>
-                    <p align="center">&COPY; Gamers Connected 2013 <p>
-                </footer>
-                </html>
 <?php
+mysql_free_result($Rusers);
+
 mysql_free_result($UGames);
 ?>

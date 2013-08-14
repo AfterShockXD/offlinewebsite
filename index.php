@@ -492,11 +492,30 @@ include("classes/functions.php");
     <td height="49" align="center">
 
         <!--Start of poll-->
+<!-- Maths for poll -->
+
+
+    <?php
+    mysql_select_db($database_loclahost, $loclahost);
+    $MaxTotalY = mysql_query("SELECT MAX(Total) FROM tblresponses");
+    $ResponesY =  $MaxTotalY;
+    $totalNeeded = 500;
+    $oldAmount = $ResponesY / $totalNeeded  ;
+    $newAmount = $oldAmount * 100 ;
+
+    ?>
+
+
+
+
 
                     <div style="width:500px" class="container-fluid">
 
-        <strong>Sign up progression:</strong><span class="pull-right">40%</span><br /></div><div class="progress progress-striped active">
-        <div class="bar" style="width:40%;"></div>
+        <strong>Sign up progression:</strong><span class="pull-right"><?php echo ("$newAmount"); ?>%</span><br /></div>
+        <div class="progress progress-striped active">
+
+        <div class="bar" style="width: <?php echo ("$newAmount"); ?>%" max="100" </div>
+
       </div>
                 <!-- End Of Poll --></td>
         <td align="center"><button type="submit" class="btn">Submit &raquo;</button></td>

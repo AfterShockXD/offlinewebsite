@@ -1,7 +1,7 @@
 <?php require_once('Connections/loclahost.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
-function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
+function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "")
 {
   if (PHP_VERSION < 6) {
     $theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
@@ -12,7 +12,7 @@ function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDe
   switch ($theType) {
     case "text":
       $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
-      break;    
+      break;
     case "long":
     case "int":
       $theValue = ($theValue != "") ? intval($theValue) : "NULL";
@@ -467,7 +467,7 @@ var script = document.createElement("script");script.async=true;script.type="tex
                 </div>
 <!-- End Of timer --></td>
   </tr>
-  <tr>
+  <!--<tr>
     <td align="center"><input class="span2 container-fluid" type="text" placeholder="Name"></td>
     <td align="center"><input class="span2 container-fluid" type="text" placeholder="Email"></td>
   </tr>
@@ -482,13 +482,13 @@ var script = document.createElement("script");script.async=true;script.type="tex
 <!-- Maths for poll -->
 
 
-    <?php
-    mysql_select_db($database_loclahost, $loclahost);
-    $MaxTotalY = mysql_query("SELECT MAX(Total) FROM tblresponses");
-    $ResponesY =  $MaxTotalY;
-    $totalNeeded = 500;
-    $oldAmount = $ResponesY / $totalNeeded  ;
-    $newAmount = $oldAmount * 100 ;
+    <?php#
+    #mysql_select_db($database_loclahost, $loclahost);
+    #$MaxTotalY = mysql_query("SELECT MAX(Total) FROM tblresponses");
+    #$ResponesY =  $MaxTotalY;
+    #$totalNeeded = 500;
+    #$oldAmount = $ResponesY / $totalNeeded  ;
+    #$newAmount = $oldAmount * 100 ;
 
     ?>
 
@@ -496,16 +496,16 @@ var script = document.createElement("script");script.async=true;script.type="tex
 
 
 
-                    <div style="width:500px" class="container-fluid">
+                 <!--   <div style="width:500px" class="container-fluid">
 
-        <strong>Sign up progression:</strong><span class="pull-right"><?php echo ("$newAmount"); ?>%</span><br /></div>
+        <strong>Sign up progression:</strong><span class="pull-right"><?php #echo ("$newAmount"); ?>%</span><br /></div>
         <div class="progress progress-striped active">
 
-        <div class="bar" style="width: <?php echo ("$newAmount"); ?>%" max="100" </div>
+        <div class="bar" style="width: <?php  #echo ("$newAmount"); ?>%" max="100" </div>
 
       </div>
                 <!-- End Of Poll --></td>
-        <td align="center"><button type="submit" class="btn">Submit &raquo;</button></td>
+        <!--<td align="center"><button type="submit" class="btn">Submit &raquo;</button></td>-->
   </tr>
 </table>
 
@@ -522,7 +522,7 @@ var script = document.createElement("script");script.async=true;script.type="tex
 
 
                 <!-- End Of timer -->
-              
+
 </body>
     <footer>
         <hr>

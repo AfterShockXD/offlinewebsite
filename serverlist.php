@@ -104,18 +104,22 @@ $totalRows_ActvServers = mysql_num_rows($ActvServers);
   <tr class="success">
     <td width="25%"><strong>Server Name</strong></td>
     <td width="25%"><strong>Game </strong></td>
-    <td width="15%"><strong>IP</strong></td>
-    <td width="15%"><strong>Active / Inactive</strong></td>
+    <td width="25%"><strong>IP</strong></td>
+    <td width="2%"><strong>Active / Inactive</strong></td>
     
-    <td width="15%"><strong>Request to Acive</strong></td>
+    <td width="20%"><strong>Request to Acive</strong></td>
   </tr> 
   <?php do { ?>
   <tr class="info">
   <td><?php echo $row_ActvServers['SName']; ?></td>
   <td><?php echo $row_ActvServers['Game']; ?></td>
   <td><?php echo $row_ActvServers['IP']; ?></td>
-  <td><?php echo $row_ActvServers['Active']; ?></td>
-  <td><a href="#"><i class="icon-upload"></i> Request</a></td>
+  <td><?php if ($row_ActvServers['Active'] == 1)
+echo '<span class="label label-success">Active</span>';
+else
+echo '<span class="label label-important">inactive</span>'; ?></td>
+  <td><a href="#"><i class="icon-upload"></i> <!-- LiveZilla Text Chat Link Code (ALWAYS PLACE IN BODY ELEMENT) --><script type="text/javascript" id="lz_textlink" src="http://127.0.0.1/offlinewebsite/LiveZilla/image.php?acid=ec46b&amp;tl=1&amp;srv=aHR0cDovLzEyNy4wLjAuMS9vZmZsaW5ld2Vic2l0ZS9MaXZlWmlsbGEvY2hhdC5waHA,YWNpZD0xYmMzOA__&amp;tlont=UmVxdWVzdA__&amp;tloft=UmVxdWVzdCAob2ZmbGluZSk_"></script><!-- http://www.LiveZilla.net Text Chat Link Code --><!-- LiveZilla Tracking Code (ALWAYS PLACE IN BODY ELEMENT) --><div id="livezilla_tracking" style="display:none"></div><script type="text/javascript">
+var script = document.createElement("script");script.async=true;script.type="text/javascript";var src = "http://127.0.0.1/offlinewebsite/LiveZilla/server.php?acid=7556d&request=track&output=jcrpt&nse="+Math.random();setTimeout("script.src=src;document.getElementById('livezilla_tracking').appendChild(script)",1);</script><noscript><img src="http://127.0.0.1/offlinewebsite/LiveZilla/server.php?acid=7556d&amp;request=track&amp;output=nojcrpt" width="0" height="0" style="visibility:hidden;" alt=""></noscript><!-- http://www.LiveZilla.net Tracking Code --></a></td>
   </tr>
    <?php } while ($row_ActvServers = mysql_fetch_assoc($ActvServers)); ?>
  </table>

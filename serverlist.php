@@ -102,10 +102,10 @@ $totalRows_ActvServers = mysql_num_rows($ActvServers);
  <div style="padding-top:2%" class="container">
   <table class="table table-hover table-bordered">
   <tr class="success">
-    <td width="25%"><strong>Server Name</strong></td>
-    <td width="25%"><strong>Game </strong></td>
-    <td width="25%"><strong>IP</strong></td>
-    <td width="2%"><strong>Active / Inactive</strong></td>
+    <td width="20%"><strong>Server Name</strong></td>
+    <td width="20%"><strong>Game </strong></td>
+    <td width="20%"><strong>IP</strong></td>
+    <td width="10%"><strong>Active / Inactive</strong></td>
     
     <td width="20%"><strong>Request to Acive</strong></td>
   </tr> 

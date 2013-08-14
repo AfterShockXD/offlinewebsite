@@ -128,8 +128,8 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
                     <li class="divider-vertical"></li>
                     <li <?php if ($nav == "administrators") echo "class='active'"; ?>><a href="administrators.php">Administrators</a></li>
                     <li class="divider-vertical"></li>
-                    <li <?php if ($nav == "events") echo "class='active'"; ?>><a href="gallery.php">Gallary</a></li>
-                    <li class="divider-vertical"></li>
+                   <!-- <li <?php if ($nav == "events") echo "class='active'"; ?>><a href="gallery.php">Gallary</a></li>
+                    <li class="divider-vertical"></li> -->
                     <li <?php if ($nav == "members") echo "class='active'"; ?>><a href="members.php">Members</a></li>
                     <li class="divider-vertical"></li>
                     <li <?php if ($nav == "servers") echo "class='active'"; ?>><a href="servers.php">Servers</a></li>
@@ -280,12 +280,7 @@ echo '<span class="label label-important">inactive</span>'; ?></td>
 		</div>
     
 </body>
-<!-- InstanceEnd -->
-<table border="0">
-  
-  
-</table>
-</html>
+<!-- InstanceEnd --></html>
 <?php
 mysql_free_result($Server);
 ?>

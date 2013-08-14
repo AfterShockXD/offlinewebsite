@@ -8,6 +8,9 @@ include("../classes/functions.php");
 //exit(); 
 if (!isset($_SESSION['uid'])) header('location: index.php');
 ?>
+
+
+
 <!DOCTYPE html>
 <html><!-- InstanceBegin template="/Templates/admin.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
@@ -48,8 +51,8 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
                     <li class="divider-vertical"></li>
                     <li <?php if ($nav == "administrators") echo "class='active'"; ?>><a href="administrators.php">Administrators</a></li>
                     <li class="divider-vertical"></li>
-                    <li <?php if ($nav == "events") echo "class='active'"; ?>><a href="gallery.php">Gallary</a></li>
-                    <li class="divider-vertical"></li>
+                   <!-- <li <?php if ($nav == "events") echo "class='active'"; ?>><a href="gallery.php">Gallary</a></li>
+                    <li class="divider-vertical"></li> -->
                     <li <?php if ($nav == "members") echo "class='active'"; ?>><a href="members.php">Members</a></li>
                     <li class="divider-vertical"></li>
                     <li <?php if ($nav == "servers") echo "class='active'"; ?>><a href="servers.php">Servers</a></li>
@@ -82,7 +85,57 @@ if (!isset($_SESSION['uid'])) header('location: index.php');
        <div style="padding-top:5px" class="container">
 	   <!-- InstanceBeginEditable name="main" -->
        
-	   
+	   <ul class="nav nav-tabs" id="myTab">
+          <li class="active"><a href="#home">Members</a></li>
+          <li><a href="#profile">Create Member</a></li>
+          <li><a href="#messages">Active Members</a></li>
+          <li><a href="#settings">Inactive Membsers</a></li>
+      </ul>
+ 
+    <div class="tab-content">
+      <div class="tab-pane active" id="home">
+      
+      
+      
+      
+      
+      ...</div>
+      <div class="tab-pane" id="profile">
+      
+      
+      
+      
+      
+      
+      ...</div>
+      <div class="tab-pane" id="messages">
+      
+      
+      
+      
+      
+      
+      ...</div>
+      <div class="tab-pane" id="settings">
+      
+      
+      
+      
+      
+      
+      ...</div>
+    </div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:fist').tab('show');
+  })
+  
+  $('#myTab a').click(function (e) {
+  e.preventDefault();
+  $(this).tab('show');
+})
+</script>
 	   
 	   
 	   <!-- InstanceEndEditable -->

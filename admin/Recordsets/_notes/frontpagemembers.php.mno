@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_Rusers" value="name:uname;datatype:string,name:fname;datatype:string,name:lname;datatype:string" />
+</info>

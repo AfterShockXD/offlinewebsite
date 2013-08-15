@@ -8,7 +8,7 @@ require_once('Recordsets/ActiveStaff.php');
 require_once('Recordsets/aadnewadmin.php');
 //var_dump($_SESSION);
 
-//6exit(); 
+//exit(); 
 if (!isset($_SESSION['uid'])) header('location: index.php');
 
 
@@ -150,7 +150,7 @@ echo '<span class="label label-important">inactive</span>'; ?> <a href="#collaps
             </tr>
             <tr valign="baseline">
               <td nowrap align="right">&nbsp;</td>
-              <td><input class="btn" type="submit" value="Add Member"</td>
+              <td><input class="btn" type="submit" value="Add Member"></td>
             </tr>
           </table>
           <input type="hidden" name="MM_insert" value="form1">

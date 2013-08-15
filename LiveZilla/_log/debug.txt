@@ -1,0 +1,3 @@
+Query without connection: SELECT * FROM `lz_filters`;
+Query without connection: SELECT * FROM `lz_filters`;
+Query without connection: SELECT * FROM `lz_com_chat_vouchers` WHERE `visitor_id`='0a254fc638' ORDER BY `created` DESC LIMIT 1;

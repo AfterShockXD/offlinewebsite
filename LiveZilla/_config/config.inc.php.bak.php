@@ -33,7 +33,7 @@ $_CONFIG[0]["gl_host"] = "MTI3LjAuMC4x";
 $_CONFIG[0]["gl_root"] = "MQ==";
 
 // Installer login 127.0.0.1
-$_CONFIG[0]["gl_insu"] = "QWRtaW4=";
+$_CONFIG[0]["gl_insu"] = "YWRtaW4=";
 $_CONFIG[0]["gl_insp"] = "NzQ4NjcyMzljNjljNWY1YTczNjIzYmM2ODNiNTdiZTI=";
 
 $_CONFIG[0]["gl_site_name"] = "MTI3LjAuMC4x";

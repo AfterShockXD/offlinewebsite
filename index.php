@@ -1,4 +1,10 @@
-<?php require_once('Connections/loclahost.php'); ?>
+<?php require_once('Connections/loclahost.php'); 
+	session_start();
+	if (!isset($_SESSION['uid'])) header('location: memberlogin.php');
+	//var_dump($_SESSION);
+
+	//exit();
+?>
 <?php
 if (!function_exists("GetSQLValueString")) {
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "")
@@ -328,17 +334,17 @@ include("classes/functions.php");
                 <ul class="nav pull-right">
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Account
+                          <?php  echo $_SESSION['name']; ?>
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
                             <div align="center"><img style="width:100px; height:100px;" src="img/png.png" class="img-circle"  ></div>
-                            <div align="center"><strong>Name Surname</strong></div>
+                            <div align="center"><strong><?php  echo $_SESSION['name']; ?></strong></div>
 
 
                             <li class="divider"></li>
-                            <li><a href="#myModal" data-toggle="modal" data-target="#myModal"><i class="icon-lock"></i> Login</a></li>
                             <li><a href="#"><i class="icon-cog"></i> Edit Account</a></li>
+                            <li><a href="admin/logout.php"><i class="icon-off"></i> Logout</a></li>
                             <li class="divider"></li>
                             <li><a href="admin/index.php"><i class="icon-star-empty"></i> Staff login</a></li>
                         </ul>
@@ -431,7 +437,7 @@ var script = document.createElement("script");script.async=true;script.type="tex
                     <?php } while ($row_Rusers = mysql_fetch_assoc($Rusers)); ?>
                   </table>
     </div>
-	<div class="container well well-large">
+	<div class="container well well-Small">
       <!-- Table And Content goes here-->
 
       <table width="100%" border="0">
@@ -464,7 +470,8 @@ var script = document.createElement("script");script.async=true;script.type="tex
                         </div>
                     </div>
                 </div>
-<!-- End Of timer --></td>
+                
+<!-- End Of timer -->
   </tr>
   <!--<tr>
     <td align="center"><input class="span2 container-fluid" type="text" placeholder="Name"></td>
@@ -513,27 +520,6 @@ var script = document.createElement("script");script.async=true;script.type="tex
 
  
 <!-- Modal -->
-<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">Login</h3>
-  </div>
-  <div class="modal-body">
-   <div class="alert alert-error">
-      <a class="close" data-dismiss="alert" href="#">×</a>Incorrect Username or Password!
-  </div>
-    <div align="center">
-        <form method="POST" action="" accept-charset="UTF-8">
-        <input type="text" id="username" class="span4" name="username" placeholder="Username">
-        <input type="password" id="password" class="span4" name="password" placeholder="Password">    
-        </div>
-        <div class="modal-footer">
-        <button type="submit" name="submit" class="btn btn-info btn-block">Sign in</button>
-        </form>
-    </div>
-  </div>
- </div>
-</div>
 
 
 

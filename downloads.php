@@ -1,3 +1,10 @@
+<?php require_once('Connections/loclahost.php'); 
+	session_start();
+	if (!isset($_SESSION['uid'])) header('location: memberlogin.php');
+	//var_dump($_SESSION);
+
+	//exit();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,22 +38,22 @@
             	</ul>
                 <!--DropDown-->
               <ul class="nav pull-right">
-  				<li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  Account
-                  <b class="caret"></b>
-                </a>
-                <ul class="dropdown-menu">
-               <div align="center"><img style="width:100px; height:100px;" src="img/png.png" class="img-circle"  ></div>
-               <div align="center"><strong>Name Surname</strong></div>
-               
-               
-                  <li class="divider"></li>
-                  <li><a href="#"><i class="icon-lock"></i> Login</a></li>
-                  <li><a href="#"><i class="icon-user"></i> Register</a></li>
-                  <li><a href="#"><i class="icon-cog"></i> Edit Account</a></li>
-                  
-                </ul>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                          <?php  echo $_SESSION['name']; ?>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <div align="center"><img style="width:100px; height:100px;" src="img/png.png" class="img-circle"  ></div>
+                            <div align="center"><strong><?php  echo $_SESSION['name']; ?></strong></div>
+
+
+                            <li class="divider"></li>
+                            <li><a href="#"><i class="icon-cog"></i> Edit Account</a></li>
+                            <li><a href="admin/logout.php"><i class="icon-off"></i> Logout</a></li>
+                            <li class="divider"></li>
+                            <li><a href="admin/index.php"><i class="icon-star-empty"></i> Staff login</a></li>
+                        </ul>
                 </li>
               </ul>
     		</div>

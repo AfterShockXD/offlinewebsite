@@ -1,0 +1,579 @@
+<table cellpadding="0" cellspacing="0" align="center" width="900">
+	<tr>
+		<td>
+			<table cellspacing="0" cellpadding="0" width="100%">
+				<tr>
+					<td class="header_line"><!--lang_stats_visitors--></td>
+					<td class="header_line" align="right">14.08.2013</td>
+				</tr>
+				<tr>
+					<td class="header_nav_line">&nbsp;&nbsp;8 <!--lang_stats_visitors--></td>
+					<td class="header_nav_line" align="right">Status:&nbsp;&nbsp;<!--lang_stats_status_closed-->&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<table class="bt_values" cellspacing="0" cellpadding="2" width="100%">
+				<tr>
+					<td class="bt_column_header" width="15">#</td>
+					<td class="bt_column_header" width="40" align="center"><!--lang_stats_pages--></td>
+					<td class="bt_column_header" width="60" align="center"><!--lang_stats_entrance--></td>
+					<td class="bt_column_header" width="60" align="center"><!--lang_stats_exit--></td>
+					<td class="bt_column_header" width="*"><!--lang_stats_country--></td>
+					<td class="bt_column_header" width="*"><!--lang_stats_city--></td>
+					<td class="bt_column_header" width="*"><!--lang_stats_browser--></td>
+					<td class="bt_column_header" width="*"><!--lang_stats_system--></td>
+					<td class="bt_column_header" width="25">&nbsp;</td>
+				</tr>
+				
+	<tr>
+		<td>1</td>
+		<td align="center"><a href="javascript:switchRowVisibility('pl_1');"><strong>2</strong></a></td>
+		<td align="center">13:32:25</td>
+		<td align="center">13:58:53</td>
+		<td NOWRAP>South Africa</td>
+		<td NOWRAP>Pretoria</td>
+		<td NOWRAP>Chrome 28</td>
+		<td NOWRAP>Windows 8</td>
+		<td class="vs" align="right"></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_11">
+		<td>&nbsp;</td>
+		<td align="center">1</td>
+		<td align="center">13:32:25</td>
+		<td align="center">13:34:57</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/" target="_blank">http://127.0.0.1/offlinewebsite/</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_12">
+		<td>&nbsp;</td>
+		<td align="center">2</td>
+		<td align="center">13:34:57</td>
+		<td align="center">13:58:53</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/index.php" target="_blank">http://127.0.0.1/offlinewebsite/index.php</a></td>
+	</tr>
+
+	<tr>
+		<td>2</td>
+		<td align="center"><a href="javascript:switchRowVisibility('pl_2');"><strong>19</strong></a></td>
+		<td align="center">14:25:30</td>
+		<td align="center">15:58:54</td>
+		<td NOWRAP>South Africa</td>
+		<td NOWRAP>Pretoria</td>
+		<td NOWRAP>Chrome 28</td>
+		<td NOWRAP>Windows 8</td>
+		<td class="vm" align="right"></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_21">
+		<td>&nbsp;</td>
+		<td align="center">1</td>
+		<td align="center">14:25:30</td>
+		<td align="center">14:26:19</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/" target="_blank">http://127.0.0.1/offlinewebsite/</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_22">
+		<td>&nbsp;</td>
+		<td align="center">2</td>
+		<td align="center">14:26:19</td>
+		<td align="center">14:50:57</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/index.php" target="_blank">http://127.0.0.1/offlinewebsite/index.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_23">
+		<td>&nbsp;</td>
+		<td align="center">3</td>
+		<td align="center">14:50:57</td>
+		<td align="center">14:57:22</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/serverlist.php" target="_blank">http://127.0.0.1/offlinewebsite/serverlist.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_24">
+		<td>&nbsp;</td>
+		<td align="center">4</td>
+		<td align="center">14:57:22</td>
+		<td align="center">14:57:30</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/index.php" target="_blank">http://127.0.0.1/offlinewebsite/index.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_25">
+		<td>&nbsp;</td>
+		<td align="center">5</td>
+		<td align="center">14:57:30</td>
+		<td align="center">14:57:36</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/serverlist.php" target="_blank">http://127.0.0.1/offlinewebsite/serverlist.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_26">
+		<td>&nbsp;</td>
+		<td align="center">6</td>
+		<td align="center">14:57:36</td>
+		<td align="center">15:08:54</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/index.php" target="_blank">http://127.0.0.1/offlinewebsite/index.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_27">
+		<td>&nbsp;</td>
+		<td align="center">7</td>
+		<td align="center">15:08:54</td>
+		<td align="center">15:09:00</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/serverlist.php" target="_blank">http://127.0.0.1/offlinewebsite/serverlist.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_28">
+		<td>&nbsp;</td>
+		<td align="center">8</td>
+		<td align="center">15:09:00</td>
+		<td align="center">15:09:00</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/index.php" target="_blank">http://127.0.0.1/offlinewebsite/index.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_29">
+		<td>&nbsp;</td>
+		<td align="center">9</td>
+		<td align="center">14:27:58</td>
+		<td align="center">14:28:00</td>
+		<td colspan="5"><!--lang_stats_browser--> 2: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/" target="_blank">http://127.0.0.1/offlinewebsite/</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_210">
+		<td>&nbsp;</td>
+		<td align="center">10</td>
+		<td align="center">14:28:00</td>
+		<td align="center">14:33:15</td>
+		<td colspan="5"><!--lang_stats_browser--> 2: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/serverlist.php" target="_blank">http://127.0.0.1/offlinewebsite/serverlist.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_211">
+		<td>&nbsp;</td>
+		<td align="center">11</td>
+		<td align="center">14:33:15</td>
+		<td align="center">14:33:37</td>
+		<td colspan="5"><!--lang_stats_browser--> 2: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/index.php" target="_blank">http://127.0.0.1/offlinewebsite/index.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_212">
+		<td>&nbsp;</td>
+		<td align="center">12</td>
+		<td align="center">14:33:37</td>
+		<td align="center">14:35:10</td>
+		<td colspan="5"><!--lang_stats_browser--> 2: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/serverlist.php" target="_blank">http://127.0.0.1/offlinewebsite/serverlist.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_213">
+		<td>&nbsp;</td>
+		<td align="center">13</td>
+		<td align="center">14:35:10</td>
+		<td align="center">14:35:52</td>
+		<td colspan="5"><!--lang_stats_browser--> 2: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/index.php" target="_blank">http://127.0.0.1/offlinewebsite/index.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_214">
+		<td>&nbsp;</td>
+		<td align="center">14</td>
+		<td align="center">14:35:52</td>
+		<td align="center">14:35:55</td>
+		<td colspan="5"><!--lang_stats_browser--> 2: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/serverlist.php" target="_blank">http://127.0.0.1/offlinewebsite/serverlist.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_215">
+		<td>&nbsp;</td>
+		<td align="center">15</td>
+		<td align="center">14:35:55</td>
+		<td align="center">15:58:54</td>
+		<td colspan="5"><!--lang_stats_browser--> 2: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/index.php" target="_blank">http://127.0.0.1/offlinewebsite/index.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_216">
+		<td>&nbsp;</td>
+		<td align="center">16</td>
+		<td align="center">14:33:11</td>
+		<td align="center">14:33:11</td>
+		<td colspan="5"><!--lang_stats_browser--> 3: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/LiveZilla/chat.php" target="_blank">http://127.0.0.1/offlinewebsite/LiveZilla/chat.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_217">
+		<td>&nbsp;</td>
+		<td align="center">17</td>
+		<td align="center">14:44:54</td>
+		<td align="center">14:45:16</td>
+		<td colspan="5"><!--lang_stats_browser--> 4: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/" target="_blank">http://127.0.0.1/offlinewebsite/</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_218">
+		<td>&nbsp;</td>
+		<td align="center">18</td>
+		<td align="center">14:45:16</td>
+		<td align="center">14:45:16</td>
+		<td colspan="5"><!--lang_stats_browser--> 4: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/index.php" target="_blank">http://127.0.0.1/offlinewebsite/index.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_219">
+		<td>&nbsp;</td>
+		<td align="center">19</td>
+		<td align="center">15:14:33</td>
+		<td align="center">15:14:33</td>
+		<td colspan="5"><!--lang_stats_browser--> 5: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/" target="_blank">http://127.0.0.1/offlinewebsite/</a></td>
+	</tr>
+
+	<tr>
+		<td>3</td>
+		<td align="center"><a href="javascript:switchRowVisibility('pl_3');"><strong>22</strong></a></td>
+		<td align="center">16:43:03</td>
+		<td align="center">19:54:58</td>
+		<td NOWRAP>South Africa</td>
+		<td NOWRAP>Pretoria</td>
+		<td NOWRAP>Chrome 28</td>
+		<td NOWRAP>Windows 8</td>
+		<td class="vm" align="right"></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_31">
+		<td>&nbsp;</td>
+		<td align="center">1</td>
+		<td align="center">16:43:03</td>
+		<td align="center">16:43:35</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/" target="_blank">http://127.0.0.1/offlinewebsite/</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_32">
+		<td>&nbsp;</td>
+		<td align="center">2</td>
+		<td align="center">16:43:35</td>
+		<td align="center">16:45:29</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/index.php" target="_blank">http://127.0.0.1/offlinewebsite/index.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_33">
+		<td>&nbsp;</td>
+		<td align="center">3</td>
+		<td align="center">16:45:29</td>
+		<td align="center">16:45:42</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/serverlist.php" target="_blank">http://127.0.0.1/offlinewebsite/serverlist.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_34">
+		<td>&nbsp;</td>
+		<td align="center">4</td>
+		<td align="center">16:45:42</td>
+		<td align="center">18:01:07</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/index.php" target="_blank">http://127.0.0.1/offlinewebsite/index.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_35">
+		<td>&nbsp;</td>
+		<td align="center">5</td>
+		<td align="center">17:40:16</td>
+		<td align="center">17:41:07</td>
+		<td colspan="5"><!--lang_stats_browser--> 2: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/" target="_blank">http://127.0.0.1/offlinewebsite/</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_36">
+		<td>&nbsp;</td>
+		<td align="center">6</td>
+		<td align="center">17:41:07</td>
+		<td align="center">18:01:00</td>
+		<td colspan="5"><!--lang_stats_browser--> 2: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/index.php" target="_blank">http://127.0.0.1/offlinewebsite/index.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_37">
+		<td>&nbsp;</td>
+		<td align="center">7</td>
+		<td align="center">17:42:17</td>
+		<td align="center">17:42:17</td>
+		<td colspan="5"><!--lang_stats_browser--> 3: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/" target="_blank">http://127.0.0.1/offlinewebsite/</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_38">
+		<td>&nbsp;</td>
+		<td align="center">8</td>
+		<td align="center">17:57:59</td>
+		<td align="center">18:05:46</td>
+		<td colspan="5"><!--lang_stats_browser--> 4: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/index.php" target="_blank">http://127.0.0.1/offlinewebsite/index.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_39">
+		<td>&nbsp;</td>
+		<td align="center">9</td>
+		<td align="center">18:05:46</td>
+		<td align="center">18:07:21</td>
+		<td colspan="5"><!--lang_stats_browser--> 4: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/serverlist.php" target="_blank">http://127.0.0.1/offlinewebsite/serverlist.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_310">
+		<td>&nbsp;</td>
+		<td align="center">10</td>
+		<td align="center">18:07:21</td>
+		<td align="center">18:07:38</td>
+		<td colspan="5"><!--lang_stats_browser--> 4: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/index.php" target="_blank">http://127.0.0.1/offlinewebsite/index.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_311">
+		<td>&nbsp;</td>
+		<td align="center">11</td>
+		<td align="center">18:07:38</td>
+		<td align="center">18:24:16</td>
+		<td colspan="5"><!--lang_stats_browser--> 4: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/serverlist.php" target="_blank">http://127.0.0.1/offlinewebsite/serverlist.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_312">
+		<td>&nbsp;</td>
+		<td align="center">12</td>
+		<td align="center">18:24:16</td>
+		<td align="center">18:27:12</td>
+		<td colspan="5"><!--lang_stats_browser--> 4: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/index.php" target="_blank">http://127.0.0.1/offlinewebsite/index.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_313">
+		<td>&nbsp;</td>
+		<td align="center">13</td>
+		<td align="center">18:27:12</td>
+		<td align="center">18:27:30</td>
+		<td colspan="5"><!--lang_stats_browser--> 4: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/serverlist.php" target="_blank">http://127.0.0.1/offlinewebsite/serverlist.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_314">
+		<td>&nbsp;</td>
+		<td align="center">14</td>
+		<td align="center">18:27:30</td>
+		<td align="center">19:54:52</td>
+		<td colspan="5"><!--lang_stats_browser--> 4: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/index.php" target="_blank">http://127.0.0.1/offlinewebsite/index.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_315">
+		<td>&nbsp;</td>
+		<td align="center">15</td>
+		<td align="center">19:54:52</td>
+		<td align="center">19:54:58</td>
+		<td colspan="5"><!--lang_stats_browser--> 4: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/index.php#" target="_blank">http://127.0.0.1/offlinewebsite/index.php#</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_316">
+		<td>&nbsp;</td>
+		<td align="center">16</td>
+		<td align="center">19:54:58</td>
+		<td align="center">19:54:58</td>
+		<td colspan="5"><!--lang_stats_browser--> 4: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/serverlist.php" target="_blank">http://127.0.0.1/offlinewebsite/serverlist.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_317">
+		<td>&nbsp;</td>
+		<td align="center">17</td>
+		<td align="center">18:00:13</td>
+		<td align="center">18:00:13</td>
+		<td colspan="5"><!--lang_stats_browser--> 5: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/LiveZilla/chat.php" target="_blank">http://127.0.0.1/offlinewebsite/LiveZilla/chat.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_318">
+		<td>&nbsp;</td>
+		<td align="center">18</td>
+		<td align="center">18:03:23</td>
+		<td align="center">18:04:18</td>
+		<td colspan="5"><!--lang_stats_browser--> 6: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/LiveZilla/chat.php" target="_blank">http://127.0.0.1/offlinewebsite/LiveZilla/chat.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_319">
+		<td>&nbsp;</td>
+		<td align="center">19</td>
+		<td align="center">18:04:55</td>
+		<td align="center">18:05:37</td>
+		<td colspan="5"><!--lang_stats_browser--> 7: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/LiveZilla/chat.php" target="_blank">http://127.0.0.1/offlinewebsite/LiveZilla/chat.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_320">
+		<td>&nbsp;</td>
+		<td align="center">20</td>
+		<td align="center">18:05:41</td>
+		<td align="center">18:05:41</td>
+		<td colspan="5"><!--lang_stats_browser--> 8: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/LiveZilla/chat.php" target="_blank">http://127.0.0.1/offlinewebsite/LiveZilla/chat.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_321">
+		<td>&nbsp;</td>
+		<td align="center">21</td>
+		<td align="center">18:05:48</td>
+		<td align="center">18:05:48</td>
+		<td colspan="5"><!--lang_stats_browser--> 9: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/LiveZilla/chat.php" target="_blank">http://127.0.0.1/offlinewebsite/LiveZilla/chat.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_322">
+		<td>&nbsp;</td>
+		<td align="center">22</td>
+		<td align="center">18:06:12</td>
+		<td align="center">18:06:19</td>
+		<td colspan="5"><!--lang_stats_browser--> 10: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/LiveZilla/chat.php" target="_blank">http://127.0.0.1/offlinewebsite/LiveZilla/chat.php</a></td>
+	</tr>
+
+	<tr>
+		<td>4</td>
+		<td align="center"><a href="javascript:switchRowVisibility('pl_4');"><strong>1</strong></a></td>
+		<td align="center">18:02:46</td>
+		<td align="center">18:02:46</td>
+		<td NOWRAP>South Africa</td>
+		<td NOWRAP>Brakpan</td>
+		<td NOWRAP>Internet Explorer 7</td>
+		<td NOWRAP>Windows 8</td>
+		<td class="vn" align="right"></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_41">
+		<td>&nbsp;</td>
+		<td align="center">1</td>
+		<td align="center">18:02:46</td>
+		<td align="center">18:02:46</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=file:///C:/Users/Jason/AppData/Local/Temp/tmpB843.html" target="_blank">file:///C:/Users/Jason/AppData/Local/Temp/tmpB843.html</a></td>
+	</tr>
+
+	<tr>
+		<td>5</td>
+		<td align="center"><a href="javascript:switchRowVisibility('pl_5');"><strong>3</strong></a></td>
+		<td align="center">20:09:44</td>
+		<td align="center">20:13:05</td>
+		<td NOWRAP>South Africa</td>
+		<td NOWRAP>Pretoria</td>
+		<td NOWRAP>Chrome 28</td>
+		<td NOWRAP>Windows 8</td>
+		<td class="vm" align="right"></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_51">
+		<td>&nbsp;</td>
+		<td align="center">1</td>
+		<td align="center">20:09:44</td>
+		<td align="center">20:12:32</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/" target="_blank">http://127.0.0.1/offlinewebsite/</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_52">
+		<td>&nbsp;</td>
+		<td align="center">2</td>
+		<td align="center">20:12:32</td>
+		<td align="center">20:12:35</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/serverlist.php" target="_blank">http://127.0.0.1/offlinewebsite/serverlist.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_53">
+		<td>&nbsp;</td>
+		<td align="center">3</td>
+		<td align="center">20:12:35</td>
+		<td align="center">20:13:05</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://127.0.0.1/offlinewebsite/index.php" target="_blank">http://127.0.0.1/offlinewebsite/index.php</a></td>
+	</tr>
+
+	<tr>
+		<td>6</td>
+		<td align="center"><a href="javascript:switchRowVisibility('pl_6');"><strong>0?</strong></a></td>
+		<td align="center">20:14:36</td>
+		<td align="center">20:50:43</td>
+		<td NOWRAP>South Africa</td>
+		<td NOWRAP>Pretoria</td>
+		<td NOWRAP>Chrome 28</td>
+		<td NOWRAP>Windows 8</td>
+		<td class="vm" align="right"></td>
+	</tr>
+
+	<tr>
+		<td>7</td>
+		<td align="center"><a href="javascript:switchRowVisibility('pl_7');"><strong>3</strong></a></td>
+		<td align="center">20:58:42</td>
+		<td align="center">21:03:39</td>
+		<td NOWRAP>South Africa</td>
+		<td NOWRAP>Pretoria</td>
+		<td NOWRAP>Chrome 28</td>
+		<td NOWRAP>Windows 8</td>
+		<td class="vm" align="right"></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_71">
+		<td>&nbsp;</td>
+		<td align="center">1</td>
+		<td align="center">20:58:42</td>
+		<td align="center">21:00:16</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://192.168.2.2/offlinewebsite/" target="_blank">http://192.168.2.2/offlinewebsite/</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_72">
+		<td>&nbsp;</td>
+		<td align="center">2</td>
+		<td align="center">21:00:16</td>
+		<td align="center">21:03:34</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://192.168.2.2/offlinewebsite/index.php" target="_blank">http://192.168.2.2/offlinewebsite/index.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_73">
+		<td>&nbsp;</td>
+		<td align="center">3</td>
+		<td align="center">21:03:34</td>
+		<td align="center">21:03:39</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://192.168.2.2/offlinewebsite/serverlist.php" target="_blank">http://192.168.2.2/offlinewebsite/serverlist.php</a></td>
+	</tr>
+
+	<tr>
+		<td>8</td>
+		<td align="center"><a href="javascript:switchRowVisibility('pl_8');"><strong>6</strong></a></td>
+		<td align="center">21:07:33</td>
+		<td align="center">21:14:51</td>
+		<td NOWRAP>United States</td>
+		<td NOWRAP>Pretoria</td>
+		<td NOWRAP>Chrome 28</td>
+		<td NOWRAP>Windows 8</td>
+		<td class="vm" align="right"></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_81">
+		<td>&nbsp;</td>
+		<td align="center">1</td>
+		<td align="center">21:07:33</td>
+		<td align="center">21:07:38</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://192.168.2.2/offlinewebsite/serverlist.php" target="_blank">http://192.168.2.2/offlinewebsite/serverlist.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_82">
+		<td>&nbsp;</td>
+		<td align="center">2</td>
+		<td align="center">21:07:38</td>
+		<td align="center">21:07:44</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://192.168.2.2/offlinewebsite/index.php" target="_blank">http://192.168.2.2/offlinewebsite/index.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_83">
+		<td>&nbsp;</td>
+		<td align="center">3</td>
+		<td align="center">21:07:44</td>
+		<td align="center">21:07:55</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://192.168.2.2/offlinewebsite/serverlist.php" target="_blank">http://192.168.2.2/offlinewebsite/serverlist.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_84">
+		<td>&nbsp;</td>
+		<td align="center">4</td>
+		<td align="center">21:07:55</td>
+		<td align="center">21:07:59</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://192.168.2.2/offlinewebsite/index.php" target="_blank">http://192.168.2.2/offlinewebsite/index.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_85">
+		<td>&nbsp;</td>
+		<td align="center">5</td>
+		<td align="center">21:07:59</td>
+		<td align="center">21:09:25</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://192.168.2.2/offlinewebsite/serverlist.php" target="_blank">http://192.168.2.2/offlinewebsite/serverlist.php</a></td>
+	</tr>
+
+	<tr style="display:none;" class="bt_values_url" id="pl_86">
+		<td>&nbsp;</td>
+		<td align="center">6</td>
+		<td align="center">21:09:25</td>
+		<td align="center">21:14:51</td>
+		<td colspan="5"><!--lang_stats_browser--> 1: <a href="http://dereferrer.livezilla.biz/?url=http://192.168.2.2/offlinewebsite/index.php" target="_blank">http://192.168.2.2/offlinewebsite/index.php</a></td>
+	</tr>
+
+			</table>
+			<br>
+		</td>
+	</tr>
+</table>
